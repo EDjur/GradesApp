@@ -1,9 +1,12 @@
 package mansci.gradesapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -33,5 +36,22 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void chooseYear(View view){
+        Button button = (Button) view;
+
+        switch (button.getId()){
+            case R.id.main_button_2ndyear:
+                Intent intent = new Intent(this, ManSciSecondYear.class);
+                startActivity(intent);
+                break;
+
+
+        }
+
+
+
+
     }
 }

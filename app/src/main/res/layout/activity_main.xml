@@ -10,17 +10,21 @@
     tools:context="mansci.gradesapp.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your year"
+        android:id="@+id/main_textview_chooseyear"
+        android:layout_toStartOf="@+id/main_button_2ndyear"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
+        android:text="2nd year"
+        android:id="@+id/main_button_2ndyear"
+        android:layout_below="@+id/main_textview_chooseyear"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp" />
+        android:layout_marginTop="96dp"
+        android:onClick="chooseYear"/>
 </RelativeLayout>
