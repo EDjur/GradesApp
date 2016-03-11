@@ -13,88 +13,98 @@
     tools:showIn="@layout/activity_man_sci_second_year">
 
     <TextView
+        android:id="@+id/secondYear_textview_termOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/modules_termOne"
-        android:id="@+id/secondYear_textview_termOne"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="6dp"/> <!-- Sets the bottom margin -->
+        android:layout_marginBottom="6dp"
+        android:text="@string/modules_termOne"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!-- Sets the bottom margin -->
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_MFOM3"
         android:id="@+id/manSci_secondYear_button_MFOM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/secondYear_textview_termOne"
-        android:layout_alignParentStart="true" />
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_MFOM3" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_strategy"
         android:id="@+id/manSci_secondYear_button_strategy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_button_MFOM"
-        android:layout_alignParentStart="true" />
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_strategy" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_CT"
         android:id="@+id/manSci_secondYear_button_CT"
-        android:layout_below="@+id/manSci_secondYear_button_strategy"
-        android:layout_alignParentStart="true" />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_finance"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/manSci_secondYear_button_strategy"
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_CT" />
+
+    <Button
         android:id="@+id/manSci_secondYear_button_finance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_button_CT"
-        android:layout_alignParentStart="true" />
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_finance" />
 
     <TextView
+        android:id="@+id/secondYear_textview_termTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/modules_termTwo"
-        android:id="@+id/secondYear_textview_termTwo"
         android:layout_below="@+id/manSci_secondYear_button_finance"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="6dp"/> <!-- Sets the bottom margin -->
+        android:layout_marginBottom="6dp"
+        android:text="@string/modules_termTwo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!-- Sets the bottom margin -->
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_design"
         android:id="@+id/manSci_secondYear_button_design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/secondYear_textview_termTwo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_design" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_PTOM"
         android:id="@+id/manSci_secondYear_button_PTOM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/manSci_secondYear_button_design"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_PTOM" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_DA"
         android:id="@+id/manSci_secondYear_button_DA"
-        android:layout_below="@+id/manSci_secondYear_button_PTOM"
-        android:layout_centerHorizontal="true" />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/manSci_secondYear_minor"
+        android:layout_below="@+id/manSci_secondYear_button_PTOM"
+        android:layout_centerHorizontal="true"
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_DA" />
+
+    <Button
         android:id="@+id/manSci_secondYear_button_minor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/manSci_secondYear_button_DA"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="chooseModule"
+        android:text="@string/manSci_secondYear_minor" />
 
 
 </RelativeLayout>

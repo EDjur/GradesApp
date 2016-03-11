@@ -19,5 +19,15 @@
     <string name="manSci_secondYear_DA">Data Analytics II</string>
     <string name="manSci_secondYear_minor">IEP Minor</string>
 
+    <!-- Toolbar Names -->
+    <string name="title_activity_mfom3">Mathematical Foundations of Management III</string>
+    <string name="title_activity_ct">Computational Thinking</string>
+    <string name="title_activity_finance">Finance I</string>
+    <string name="title_activity_strategy">Strategy by Design</string>
+    <string name="title_activity_design">Design</string>
+    <string name="title_activity_ptom">Product, Technology, and Operations Management</string>
+    <string name="title_activity_da2">Data Analytics II</string>
+    <string name="title_activity_minor">IEP Minor</string>
+
 
 </resources>

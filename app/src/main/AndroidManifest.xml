@@ -26,6 +26,78 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="mansci.gradesapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".manSciModules.MFOM3"
+            android:label="@string/title_activity_mfom3"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.CT"
+            android:label="@string/title_activity_ct"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.Finance"
+            android:label="@string/title_activity_finance"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.Strategy"
+            android:label="@string/title_activity_strategy"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.Design"
+            android:label="@string/title_activity_design"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.PTOM"
+            android:label="@string/title_activity_ptom"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.DA2"
+            android:label="@string/title_activity_da2"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.Minor"
+            android:label="@string/title_activity_minor"
+            android:parentActivityName=".ManSciSecondYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciSecondYear" />
+        </activity>
     </application>
 
 </manifest>
