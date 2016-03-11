@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">GradesApp</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_man_sci_second_year">ManSciSecondYear</string>
+    <string name="title_activity_man_sci_second_year">Choose your module</string>
+    <string name="main_button_2ndyear">Second Year</string>
+    <string name="main_textview_chooseyear">Management Science: What year are you in?</string>
+    <string name="modules_termOne">Term 1</string>
+    <string name="modules_termTwo">Term 2</string>
+
+    <!-- MODULES MANAGEMENT SCIENCE YEAR 2 -->
+    <!-- TERM 1 -->
+    <string name="manSci_secondYear_MFOM3">MFOM III</string>
+    <string name="manSci_secondYear_strategy">Strategy by Design</string>
+    <string name="manSci_secondYear_CT">Computational Thinking</string>
+    <string name="manSci_secondYear_finance">Finance I</string>
+    <!-- TERM 2 -->
+    <string name="manSci_secondYear_design">Design</string>
+    <string name="manSci_secondYear_PTOM">PTOM</string>
+    <string name="manSci_secondYear_DA">Data Analytics II</string>
+    <string name="manSci_secondYear_minor">IEP Minor</string>
+
+
 </resources>
