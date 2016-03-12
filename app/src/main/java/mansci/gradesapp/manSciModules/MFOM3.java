@@ -52,13 +52,13 @@ public class MFOM3 extends AppCompatActivity {
                 assignment1.setText(getResources().getString(R.string.assignment_1));
                 assignment1.setId(R.id.mfom3_assignment_1);
                 assignment1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-                lp.setMargins(0, (int) getResources().getDimension(R.dimen.fifteen_dp), 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lp.setMargins(0, (int) getResources().getDimension(R.dimen.fifteen_dp), 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment1, lp);
 
                 EditText assignment1Weight = new EditText(this);
                 assignment1Weight.setId(R.id.mfom3_assignment_1_weight);
                 assignment1Weight.setHint(getResources().getString(R.string.weight));
-                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_1);
                 parentLayout.addView(assignment1Weight, lpWeight);
@@ -66,7 +66,7 @@ public class MFOM3 extends AppCompatActivity {
                 EditText assignment1Grade = new EditText(this);
                 assignment1Grade.setId(R.id.mfom3_assignment_1_grade);
                 assignment1Grade.setHint(getResources().getString(R.string.grade));
-                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_1_weight);
                 parentLayout.addView(assignment1Grade, lpGrade);
@@ -77,7 +77,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment2.setId(R.id.mfom3_assignment_2);
                 assignment2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_1);
-                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment2, lp);
 
                 EditText assignment2Weight = new EditText(this);
@@ -85,7 +85,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment2Weight.setHint(getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_2);
-                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment2Weight, lpWeight);
 
                 EditText assignment2Grade = new EditText(this);
@@ -93,7 +93,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment2Grade.setHint(getResources().getString(R.string.grade));
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_2_weight);
-                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment2Grade, lpGrade);
                 break;
             case 2:
@@ -102,7 +102,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment3.setId(R.id.mfom3_assignment_3);
                 assignment3.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_2);
-                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment3, lp);
 
                 EditText assignment3Weight = new EditText(this);
@@ -110,7 +110,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment3Weight.setHint(getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_3);
-                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment3Weight, lpWeight);
 
                 EditText assignment3Grade = new EditText(this);
@@ -118,7 +118,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment3Grade.setHint(getResources().getString(R.string.grade));
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_3_weight);
-                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment3Grade, lpGrade);
                 break;
             case 3:
@@ -127,7 +127,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment4.setId(R.id.mfom3_assignment_4);
                 assignment4.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_3);
-                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment4, lp);
 
                 EditText assignment4Weight = new EditText(this);
@@ -135,7 +135,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment4Weight.setHint(getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_4);
-                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment4Weight, lpWeight);
 
                 EditText assignment4Grade = new EditText(this);
@@ -143,7 +143,7 @@ public class MFOM3 extends AppCompatActivity {
                 assignment4Grade.setHint(getResources().getString(R.string.grade));
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_4_weight);
-                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment4Grade, lpGrade);
                 break;
         }
