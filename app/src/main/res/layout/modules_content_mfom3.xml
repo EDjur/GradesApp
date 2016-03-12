@@ -17,11 +17,11 @@
         android:id="@+id/manSci_secondYear_modules_mfom_addAssignment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="55dp"
         android:onClick="addAssignment"
-        android:text="@string/add_assignment" />
+        android:text="@string/add_assignment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/manSci_secondYear_modules_mfom_gradeNeeded"
+        android:layout_marginBottom="51dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,6 +76,15 @@
         android:id="@+id/manSci_secondYear_modules_mfom_Pass"
         android:layout_below="@+id/manSci_secondYear_modules_mfom_third"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_grades_needed"
+        android:id="@+id/manSci_secondYear_button_MFOM_calculateGrades"
+        android:onClick="calculateGrades"
+        android:layout_alignTop="@+id/manSci_secondYear_modules_mfom_addAssignment"
+        android:layout_toEndOf="@+id/manSci_secondYear_modules_mfom_addAssignment" />
 
 
 </RelativeLayout>
