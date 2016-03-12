@@ -29,9 +29,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Exam grade needed"
         android:id="@+id/manSci_secondYear_modules_mfom_gradeNeeded"
-        android:layout_below="@+id/manSci_secondYear_modules_mfom_Pass"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="149dp" />
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
