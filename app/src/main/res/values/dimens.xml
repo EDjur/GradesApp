@@ -6,4 +6,6 @@
 
     <!-- Dimensions used to replace pixels -->
     <dimen name="six_dp">6dp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="fifteen_dp">15dp</dimen>
 </resources>

@@ -7,9 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
+import org.w3c.dom.Text;
 
 import mansci.gradesapp.R;
 
@@ -38,7 +41,9 @@ public class MFOM3 extends AppCompatActivity {
         RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-        lp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+        RelativeLayout.LayoutParams lpWeight = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        //lp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 
         switch (number_of_assignments) {
             case 0:
@@ -46,8 +51,15 @@ public class MFOM3 extends AppCompatActivity {
                 assignment1.setText(getResources().getString(R.string.assignment_1));
                 assignment1.setId(R.id.mfom3_assignment_1);
                 assignment1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
-                lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
+                lp.setMargins(0, (int) getResources().getDimension(R.dimen.fifteen_dp), 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment1, lp);
+
+                EditText assignment1Weight = new EditText(this);
+                assignment1Weight.setId(R.id.mfom3_assignment_1_weight);
+                assignment1Weight.setHint(getResources().getString(R.string.weight));
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1);
+                lpWeight.addRule(RelativeLayout.ALIGN_BOTTOM, R.id.mfom3_assignment_1);
+                parentLayout.addView(assignment1Weight, lpWeight);
                 break;
             case 1:
                 TextView assignment2 = new TextView(this);
@@ -57,6 +69,13 @@ public class MFOM3 extends AppCompatActivity {
                 lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_1);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment2, lp);
+
+                EditText assignment2Weight = new EditText(this);
+                assignment2Weight.setId(R.id.mfom3_assignment_1_weight);
+                assignment2Weight.setHint(getResources().getString(R.string.weight));
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2);
+                lpWeight.addRule(RelativeLayout.ALIGN_BOTTOM, R.id.mfom3_assignment_2);
+                parentLayout.addView(assignment2Weight, lpWeight);
                 break;
             case 2:
                 TextView assignment3 = new TextView(this);
@@ -66,6 +85,13 @@ public class MFOM3 extends AppCompatActivity {
                 lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_2);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment3, lp);
+
+                EditText assignment3Weight = new EditText(this);
+                assignment3Weight.setId(R.id.mfom3_assignment_1_weight);
+                assignment3Weight.setHint(getResources().getString(R.string.weight));
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3);
+                lpWeight.addRule(RelativeLayout.ALIGN_BOTTOM, R.id.mfom3_assignment_3);
+                parentLayout.addView(assignment3Weight, lpWeight);
                 break;
             case 3:
                 TextView assignment4 = new TextView(this);
@@ -75,6 +101,13 @@ public class MFOM3 extends AppCompatActivity {
                 lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_3);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment4, lp);
+
+                EditText assignment4Weight = new EditText(this);
+                assignment4Weight.setId(R.id.mfom3_assignment_1_weight);
+                assignment4Weight.setHint(getResources().getString(R.string.weight));
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4);
+                lpWeight.addRule(RelativeLayout.ALIGN_BOTTOM, R.id.mfom3_assignment_4);
+                parentLayout.addView(assignment4Weight, lpWeight);
                 break;
         }
         number_of_assignments++;

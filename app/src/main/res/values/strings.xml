@@ -53,5 +53,9 @@
     <string name="title_activity_mfom1">MFOM1</string>
     <string name="title_activity_cat">cat</string>
 
+    <!-- Grades and Weights -->
+    <string name="weight">Weight (%)</string>
+    <string name="grade">Grade</string>
+
 
 </resources>
