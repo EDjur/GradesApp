@@ -3,10 +3,23 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_man_sci_second_year">Choose your module</string>
     <string name="main_button_2ndyear">Second Year</string>
+    <string name="main_button_1styear">First Year</string>
     <string name="main_textview_chooseyear">Management Science: What year are you in?</string>
     <string name="modules_termOne">Term 1</string>
     <string name="modules_termTwo">Term 2</string>
     <string name="add_assignment">Add assignment</string>
+
+    <!-- MODULES MANAGEMENT SCIENCE YEAR 1-->
+    <!-- TERM 1 -->
+    <string name="manSci_firstYear_MFOM1">MFOM I</string>
+    <string name="manSci_firstYear_cat">Critical Analytical Thinking</string>
+    <string name="manSci_firstYear_be1">Business Economics I</string>
+    <string name="manSci_firstYear_asm">Art and Science of Management</string>
+    <!-- TERM 2 -->
+    <string name="manSci_firstYear_bs">Behavioural Science</string>
+    <string name="manSci_firstYear_da1">Data Analytics I</string>
+    <string name="manSci_firstYear_be2">Business Economics II</string>
+    <string name="manSci_firstYear_MFOM2">MFOM I</string>
 
     <!-- MODULES MANAGEMENT SCIENCE YEAR 2 -->
     <!-- TERM 1 -->
@@ -36,6 +49,9 @@
     <string name="assignment_3">Assignment 3</string>
     <string name="assignment_4">Assignment 4</string>
     <string name="assignment_5">Assignment 5</string>
+    <string name="title_activity_man_sci_first_year">ManSciFirstYear</string>
+    <string name="title_activity_mfom1">MFOM1</string>
+    <string name="title_activity_cat">cat</string>
 
 
 </resources>
