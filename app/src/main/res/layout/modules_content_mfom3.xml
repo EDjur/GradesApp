@@ -22,4 +22,61 @@
         android:layout_marginBottom="55dp"
         android:onClick="addAssignment"
         android:text="@string/add_assignment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Exam grade needed"
+        android:id="@+id/manSci_secondYear_modules_mfom_gradeNeeded"
+        android:layout_below="@+id/manSci_secondYear_modules_mfom_Pass"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="149dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 1st: "
+        android:id="@+id/manSci_secondYear_modules_mfom_First"
+        android:layout_below="@+id/manSci_secondYear_modules_mfom_gradeNeeded"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 2.1:"
+        android:id="@+id/manSci_secondYear_modules_mfom_twoOne"
+        android:layout_below="@+id/manSci_secondYear_modules_mfom_First"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 2.2:"
+        android:id="@+id/manSci_secondYear_modules_mfom_twoTwo"
+        android:layout_below="@+id/manSci_secondYear_modules_mfom_twoOne"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 3rd:"
+        android:id="@+id/manSci_secondYear_modules_mfom_third"
+        android:layout_below="@id/manSci_secondYear_modules_mfom_twoTwo"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="To Pass:"
+        android:id="@+id/manSci_secondYear_modules_mfom_Pass"
+        android:layout_below="@+id/manSci_secondYear_modules_mfom_third"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
