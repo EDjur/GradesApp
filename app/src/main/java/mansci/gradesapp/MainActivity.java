@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
             case R.id.main_button_2ndyear:
                 Intent intent = new Intent(this, ManSciSecondYear.class);
                 startActivity(intent);
+                break;
             case R.id.main_button_1styear:
                 Intent intent2 = new Intent(this, ManSciFirstYear.class);
                 startActivity(intent2);

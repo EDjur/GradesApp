@@ -10,6 +10,11 @@
     <item name="mfom3_assignment_2_weight" type="id"/>
     <item name="mfom3_assignment_3_weight" type="id"/>
     <item name="mfom3_assignment_4_weight" type="id"/>
+    <item name="mfom3_assignment_1_grade" type="id"/>
+    <item name="mfom3_assignment_2_grade" type="id"/>
+    <item name="mfom3_assignment_3_grade" type="id"/>
+    <item name="mfom3_assignment_4_grade" type="id"/>
+
 
 
 </resources>
