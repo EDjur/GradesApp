@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MFOM 3 -->
+    <item name="mfom3_assignment_1" type="id"/>
+    <item name="mfom3_assignment_2" type="id"/>
+    <item name="mfom3_assignment_3" type="id"/>
+    <item name="mfom3_assignment_4" type="id"/>
+
+
+</resources>

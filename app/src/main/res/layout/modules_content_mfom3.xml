@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mfom_relative_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -12,4 +13,13 @@
     tools:context="mansci.gradesapp.manSciModules.MFOM3"
     tools:showIn="@layout/modules_activity_mfom3">
 
+    <Button
+        android:id="@+id/manSci_secondYear_modules_mfom_addAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:onClick="addAssignment"
+        android:text="@string/add_assignment" />
 </RelativeLayout>

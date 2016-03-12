@@ -10,21 +10,30 @@
     tools:context="mansci.gradesapp.MainActivity">
 
     <TextView
+        android:id="@+id/main_textview_chooseyear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/main_textview_chooseyear"
-        android:id="@+id/main_textview_chooseyear"
+        android:layout_alignParentEnd="true"
         android:layout_toStartOf="@+id/main_button_2ndyear"
-        android:layout_alignParentEnd="true" />
+        android:text="@string/main_textview_chooseyear"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
+        android:id="@+id/main_button_2ndyear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_button_2ndyear"
-        android:id="@+id/main_button_2ndyear"
         android:layout_below="@+id/main_textview_chooseyear"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp"
-        android:onClick="chooseYear"/>
+        android:onClick="chooseYear"
+        android:text="@string/main_button_2ndyear" />
+
+    <ImageView
+        android:id="@+id/main_imageView_SoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/ucl_som_logo" />
 </RelativeLayout>

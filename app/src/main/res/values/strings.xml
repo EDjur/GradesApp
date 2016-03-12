@@ -6,6 +6,7 @@
     <string name="main_textview_chooseyear">Management Science: What year are you in?</string>
     <string name="modules_termOne">Term 1</string>
     <string name="modules_termTwo">Term 2</string>
+    <string name="add_assignment">Add assignment</string>
 
     <!-- MODULES MANAGEMENT SCIENCE YEAR 2 -->
     <!-- TERM 1 -->
@@ -28,6 +29,13 @@
     <string name="title_activity_ptom">Product, Technology, and Operations Management</string>
     <string name="title_activity_da2">Data Analytics II</string>
     <string name="title_activity_minor">IEP Minor</string>
+
+    <!-- Assignment Names -->
+    <string name="assignment_1">Assignment 1</string>
+    <string name="assignment_2">Assignment 2</string>
+    <string name="assignment_3">Assignment 3</string>
+    <string name="assignment_4">Assignment 4</string>
+    <string name="assignment_5">Assignment 5</string>
 
 
 </resources>
