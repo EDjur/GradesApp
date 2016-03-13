@@ -252,20 +252,50 @@ public class MFOM3 extends AppCompatActivity {
         for (int i = 0; i < number_of_assignments; i++) {
             switch (i) {
                 case 0:
-                    grades[0] = Integer.parseInt(assignment1Grade.getText().toString());
-                    weights[0] = Integer.parseInt(assignment1Weight.getText().toString());
+                    try {
+                        grades[0] = Integer.parseInt(assignment1Grade.getText().toString());
+                        weights[0] = Integer.parseInt(assignment1Weight.getText().toString());
+                    }
+                    // Sets values to 0 if they don't exist
+                    catch (Exception e) {
+                        grades[0] = 0;
+                        weights[0] = 0;
+                    }
                     break;
                 case 1:
-                    grades[1] = Integer.parseInt(assignment2Grade.getText().toString());
-                    weights[1] = Integer.parseInt(assignment1Weight.getText().toString());
+                    try {
+                        grades[1] = Integer.parseInt(assignment2Grade.getText().toString());
+                        weights[1] = Integer.parseInt(assignment1Weight.getText().toString());
+                    }
+                    // Sets values to 0 if they don't exist
+                    catch (Exception e) {
+                        grades[1] = 0;
+                        weights[1] = 0;
+                    }
+
                     break;
                 case 2:
-                    grades[2] = Integer.parseInt(assignment3Grade.getText().toString());
-                    weights[2] = Integer.parseInt(assignment1Weight.getText().toString());
+                    try {
+                        grades[2] = Integer.parseInt(assignment3Grade.getText().toString());
+                        weights[2] = Integer.parseInt(assignment1Weight.getText().toString());
+                    }
+                    // Sets values to 0 if they don't exist
+                    catch (Exception e) {
+                        grades[2] = 0;
+                        weights[2] = 0;
+                    }
                     break;
                 case 3:
-                    grades[3] = Integer.parseInt(assignment4Grade.getText().toString());
-                    weights[3] = Integer.parseInt(assignment1Weight.getText().toString());
+                    try {
+                        grades[3] = Integer.parseInt(assignment4Grade.getText().toString());
+                        weights[3] = Integer.parseInt(assignment1Weight.getText().toString());
+                    }
+                    // Sets values to 0 if they don't exist
+                    catch (Exception e) {
+                        grades[3] = 0;
+                        weights[3] = 0;
+                    }
+
                     break;
             }
         }
@@ -289,5 +319,3 @@ public class MFOM3 extends AppCompatActivity {
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }
-
-
