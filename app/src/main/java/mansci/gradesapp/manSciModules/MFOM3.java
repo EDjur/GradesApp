@@ -1,12 +1,15 @@
 package mansci.gradesapp.manSciModules;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.util.TypedValue;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -59,8 +62,6 @@ public class MFOM3 extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
 
-
-
         switch (number_of_assignments) {
             case 0:
                 assignment1 = new TextView(this);
@@ -71,16 +72,36 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment1, lp);
 
                 assignment1Weight = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment1Weight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment1Weight.setId(R.id.mfom3_assignment_1_weight);
                 assignment1Weight.setHint(getResources().getString(R.string.weight));
+                assignment1Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpWeight.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_1);
                 parentLayout.addView(assignment1Weight, lpWeight);
 
                 assignment1Grade = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment1Grade.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment1Grade.setId(R.id.mfom3_assignment_1_grade);
                 assignment1Grade.setHint(getResources().getString(R.string.grade));
+                assignment1Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_1_weight);
@@ -96,7 +117,17 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment2, lp);
 
                 assignment2Weight = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment2Weight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment2Weight.setId(R.id.mfom3_assignment_2_weight);
+                assignment2Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 assignment2Weight.setHint(getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_2);
@@ -104,8 +135,18 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment2Weight, lpWeight);
 
                 assignment2Grade = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment2Grade.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment2Grade.setId(R.id.mfom3_assignment_2_grade);
                 assignment2Grade.setHint(getResources().getString(R.string.grade));
+                assignment2Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_2_weight);
                 lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
@@ -121,6 +162,16 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment3, lp);
 
                 assignment3Weight = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment3Weight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
+                assignment3Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 assignment3Weight.setId(R.id.mfom3_assignment_3_weight);
                 assignment3Weight.setHint(getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3);
@@ -129,8 +180,18 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment3Weight, lpWeight);
 
                 assignment3Grade = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment3Grade.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment3Grade.setId(R.id.mfom3_assignment_3_grade);
                 assignment3Grade.setHint(getResources().getString(R.string.grade));
+                assignment3Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_3_weight);
                 lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
@@ -146,7 +207,17 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment4, lp);
 
                 assignment4Weight = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment4Weight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment4Weight.setId(R.id.mfom3_assignment_4_weight);
+                assignment4Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 assignment4Weight.setHint(getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4);
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_4);
@@ -154,8 +225,18 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment4Weight, lpWeight);
 
                 assignment4Grade = new EditText(this);
+                // Remove keyboard when tapping main view
+                assignment4Grade.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+                            hideKeyboard(v);
+                        }
+                    }
+                });
                 assignment4Grade.setId(R.id.mfom3_assignment_4_grade);
                 assignment4Grade.setHint(getResources().getString(R.string.grade));
+                assignment4Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4_weight);
                 lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_4_weight);
                 lpGrade.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.fifteen_dp));
@@ -166,10 +247,11 @@ public class MFOM3 extends AppCompatActivity {
 
 
     }
-    public void calculateGrades(View view){
+
+    public void calculateGrades(View view) {
 
         /// TESTING PURPOSES
-        assignment1Weight.setText("5");
+        /*assignment1Weight.setText("5");
         assignment2Weight.setText("5");
         assignment3Weight.setText("5");
         assignment4Weight.setText("5");
@@ -177,39 +259,51 @@ public class MFOM3 extends AppCompatActivity {
         assignment1Grade.setText("96");
         assignment2Grade.setText("100");
         assignment3Grade.setText("100");
-        assignment4Grade.setText("100");
-
+        assignment4Grade.setText("100");*/
 
 
         int[] grades = new int[number_of_assignments];
         int[] weights = new int[number_of_assignments];
-        List<Integer> gradesNeeded = new ArrayList<>();
+        List<Integer> gradesNeeded;
         Calculations calculations = new Calculations();
-        /// Change to for loop somehow...
 
-        grades[0] = Integer.parseInt(assignment1Grade.getText().toString());
-        grades[1] = Integer.parseInt(assignment2Grade.getText().toString());
-        grades[2] = Integer.parseInt(assignment3Grade.getText().toString());
-        grades[3] = Integer.parseInt(assignment4Grade.getText().toString());
+        for (int i = 0; i < number_of_assignments; i++) {
+            switch (i) {
+                case 0:
+                    grades[0] = Integer.parseInt(assignment1Grade.getText().toString());
+                    weights[0] = Integer.parseInt(assignment1Weight.getText().toString());
+                    break;
+                case 1:
+                    grades[1] = Integer.parseInt(assignment2Grade.getText().toString());
+                    weights[1] = Integer.parseInt(assignment1Weight.getText().toString());
+                    break;
+                case 2:
+                    grades[2] = Integer.parseInt(assignment3Grade.getText().toString());
+                    weights[2] = Integer.parseInt(assignment1Weight.getText().toString());
+                    break;
+                case 3:
+                    grades[3] = Integer.parseInt(assignment4Grade.getText().toString());
+                    weights[3] = Integer.parseInt(assignment1Weight.getText().toString());
+                    break;
+            }
+        }
 
-        weights[0] = Integer.parseInt(assignment1Weight.getText().toString());
-        weights[1] = Integer.parseInt(assignment1Weight.getText().toString());
-        weights[2] = Integer.parseInt(assignment1Weight.getText().toString());
-        weights[3] = Integer.parseInt(assignment1Weight.getText().toString());
+        gradesNeeded = calculations.calculateGrades(weights, grades, number_of_assignments);
 
-        gradesNeeded = calculations.calculateGrades(weights,grades,number_of_assignments);
+        // CONSIDER REPLACING WITH FOR LOOP
+        TextView first = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_First_grade);
+        TextView twoOne = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoOne_grade);
+        TextView twoTwo = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoTwo_grade);
+        TextView pass = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_pass_grade);
 
-
-        /*
-        double weight = Double.parseDouble(((TextView) findViewById(R.id.textView_ManSci_Y2_MFOM3_A1_weight_value)).getText().toString());
-        double grade = Double.parseDouble(((TextView) findViewById(R.id.textView_ManSci_Y2_MFOM3_A1_grade_value)).getText().toString());
-
-        double finalExamWeight = 100 - weight;
-        double haveSoFar = weight*grade*0.01;
-        double toGetFirst = 70 - haveSoFar;
-        double gradeForFirst = (toGetFirst/finalExamWeight)*100;
-        ((TextView) findViewById(R.id.textView_ManSci_Y2_MFOM3_gradeNeeded_first_value)).setText(Double.toString(gradeForFirst));
-        */
+        first.setText(gradesNeeded.get(3).toString());
+        twoOne.setText(gradesNeeded.get(2).toString());
+        twoTwo.setText(gradesNeeded.get(1).toString());
+        pass.setText(gradesNeeded.get(0).toString());
+    }
+    public void hideKeyboard(View view) {
+        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }
 

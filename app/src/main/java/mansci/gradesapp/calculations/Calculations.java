@@ -41,8 +41,8 @@ public class Calculations {
 
         int weightSum = 0;
         double haveSoFar = 0;
-        Assignment[] assignments = new Assignment[weights.length];
-        for (int i = 0; i < weights.length; i++) {
+        Assignment[] assignments = new Assignment[number_of_assignments];
+        for (int i = 0; i < number_of_assignments; i++) {
             assignments[i] = new Assignment(weights[i], grades[i]);
         }
         for (Assignment assignment : assignments) {
@@ -67,11 +67,10 @@ public class Calculations {
         // ELSE SEND DIVISION BY ZERO MESSAGE
 
         List<Integer> gradesNeeded = new ArrayList<Integer>();
-        gradesNeeded.add((int) Math.round(needForThird));
-        gradesNeeded.add((int) Math.round(needForTwoTwo));
-        gradesNeeded.add((int) Math.round(needForTwoOne));
-        gradesNeeded.add((int) Math.round(needForFirst));
-
+        gradesNeeded.add((int) Math.ceil(needForThird));
+        gradesNeeded.add((int) Math.ceil(needForTwoTwo));
+        gradesNeeded.add((int) Math.ceil(needForTwoOne));
+        gradesNeeded.add((int) Math.ceil(needForFirst));
 
         return gradesNeeded;
     }
