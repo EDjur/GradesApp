@@ -12,13 +12,12 @@ import android.widget.TextView;
 
 import mansci.gradesapp.R;
 
-public class MFOM1 extends AppCompatActivity {
+public class be1 extends AppCompatActivity {
     private int number_of_assignments = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modules_activity_mfom1);
+        setContentView(R.layout.modules_activity_be1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -41,7 +40,7 @@ public class MFOM1 extends AppCompatActivity {
             case 0:
                 TextView assignment1 = new TextView(this);
                 assignment1.setText(getResources().getString(R.string.assignment_1));
-                assignment1.setId(R.id.mfom1_assignment_1);
+                assignment1.setId(R.id.be1_assignment_1);
                 assignment1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment1, lp);
@@ -49,27 +48,27 @@ public class MFOM1 extends AppCompatActivity {
             case 1:
                 TextView assignment2 = new TextView(this);
                 assignment2.setText(getResources().getString(R.string.assignment_2));
-                assignment2.setId(R.id.mfom1_assignment_2);
+                assignment2.setId(R.id.be1_assignment_2);
                 assignment2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
-                lp.addRule(RelativeLayout.BELOW, R.id.mfom1_assignment_1);
+                lp.addRule(RelativeLayout.BELOW, R.id.be1_assignment_1);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment2, lp);
                 break;
             case 2:
                 TextView assignment3 = new TextView(this);
                 assignment3.setText(getResources().getString(R.string.assignment_3));
-                assignment3.setId(R.id.mfom1_assignment_3);
+                assignment3.setId(R.id.be1_assignment_3);
                 assignment3.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
-                lp.addRule(RelativeLayout.BELOW, R.id.mfom1_assignment_2);
+                lp.addRule(RelativeLayout.BELOW, R.id.be1_assignment_2);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment3, lp);
                 break;
             case 3:
                 TextView assignment4 = new TextView(this);
                 assignment4.setText(getResources().getString(R.string.assignment_4));
-                assignment4.setId(R.id.mfom1_assignment_4);
+                assignment4.setId(R.id.be1_assignment_4);
                 assignment4.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
-                lp.addRule(RelativeLayout.BELOW, R.id.mfom1_assignment_3);
+                lp.addRule(RelativeLayout.BELOW, R.id.be1_assignment_3);
                 lp.setMargins(0, 0, 0, (int) getResources().getDimension(R.dimen.six_dp));
                 parentLayout.addView(assignment4, lp);
                 break;

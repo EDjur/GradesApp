@@ -23,15 +23,6 @@
         android:onClick="addAssignment"
         android:text="@string/add_assignment" />
 
-    <Button
-        android:id="@+id/manSci_secondYear_button_strategy_calculateGrades"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/manSci_secondYear_modules_strategy_addAssignment"
-        android:layout_toEndOf="@+id/manSci_secondYear_modules_strategy_addAssignment"
-        android:onClick="calculateGrades"
-        android:text="@string/calculate_grades_needed" />
-
     <TextView
         android:id="@+id/manSci_secondYear_modules_strategy_gradeNeeded"
         android:layout_width="wrap_content"
@@ -47,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_gradeNeeded"
-        android:text="For a 1st: "
+        android:layout_marginEnd="5dp"
+        android:text="For a 1st:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -56,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_First"
+        android:layout_marginEnd="5dp"
         android:text="For a 2.1:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -65,8 +58,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_twoOne"
+        android:layout_marginEnd="5dp"
         android:text="For a 2.2:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
 
     <TextView
         android:id="@+id/manSci_secondYear_modules_strategy_Pass"
@@ -74,8 +69,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_twoTwo"
-        android:text="To Pass:"
+        android:layout_marginEnd="5dp"
+        android:text="For a 3rd/pass:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/manSci_secondYear_button_strategy_calculateGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/manSci_secondYear_modules_strategy_addAssignment"
+        android:layout_toEndOf="@+id/manSci_secondYear_modules_strategy_addAssignment"
+        android:onClick="calculateGrades"
+        android:text="@string/calculate_grades_needed" />
 
     <TextView
         android:id="@+id/manSci_secondYear_modules_strategy_First_grade"
@@ -115,4 +120,6 @@
         android:layout_toEndOf="@id/manSci_secondYear_modules_strategy_Pass"
         android:text=""
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
 </RelativeLayout>

@@ -15,6 +15,61 @@
     <item name="mfom3_assignment_3_grade" type="id"/>
     <item name="mfom3_assignment_4_grade" type="id"/>
 
+    <!-- MFOM 1 -->
+    <item name="mfom1_assignment_1" type="id"/>
+    <item name="mfom1_assignment_2" type="id"/>
+    <item name="mfom1_assignment_3" type="id"/>
+    <item name="mfom1_assignment_4" type="id"/>
+    <item name="mfom1_assignment_1_weight" type="id"/>
+    <item name="mfom1_assignment_2_weight" type="id"/>
+    <item name="mfom1_assignment_3_weight" type="id"/>
+    <item name="mfom1_assignment_4_weight" type="id"/>
+    <item name="mfom1_assignment_1_grade" type="id"/>
+    <item name="mfom1_assignment_2_grade" type="id"/>
+    <item name="mfom1_assignment_3_grade" type="id"/>
+    <item name="mfom1_assignment_4_grade" type="id"/>
+
+    <!-- CAT -->
+    <item name="cat_assignment_1" type="id"/>
+    <item name="cat_assignment_2" type="id"/>
+    <item name="cat_assignment_3" type="id"/>
+    <item name="cat_assignment_4" type="id"/>
+    <item name="cat_assignment_1_weight" type="id"/>
+    <item name="cat_assignment_2_weight" type="id"/>
+    <item name="cat_assignment_3_weight" type="id"/>
+    <item name="cat_assignment_4_weight" type="id"/>
+    <item name="cat_assignment_1_grade" type="id"/>
+    <item name="cat_assignment_2_grade" type="id"/>
+    <item name="cat_assignment_3_grade" type="id"/>
+    <item name="cat_assignment_4_grade" type="id"/>
+
+    <!-- Business Economics 1 -->
+    <item name="be1_assignment_1" type="id"/>
+    <item name="be1_assignment_2" type="id"/>
+    <item name="be1_assignment_3" type="id"/>
+    <item name="be1_assignment_4" type="id"/>
+    <item name="be1_assignment_1_weight" type="id"/>
+    <item name="be1_assignment_2_weight" type="id"/>
+    <item name="be1_assignment_3_weight" type="id"/>
+    <item name="be1_assignment_4_weight" type="id"/>
+    <item name="be1_assignment_1_grade" type="id"/>
+    <item name="be1_assignment_2_grade" type="id"/>
+    <item name="be1_assignment_3_grade" type="id"/>
+    <item name="be1_assignment_4_grade" type="id"/>
+
+    <!-- Art and Science of Management -->
+    <item name="asm_assignment_1" type="id"/>
+    <item name="asm_assignment_2" type="id"/>
+    <item name="asm_assignment_3" type="id"/>
+    <item name="asm_assignment_4" type="id"/>
+    <item name="asm_assignment_1_weight" type="id"/>
+    <item name="asm_assignment_2_weight" type="id"/>
+    <item name="asm_assignment_3_weight" type="id"/>
+    <item name="asm_assignment_4_weight" type="id"/>
+    <item name="asm_assignment_1_grade" type="id"/>
+    <item name="asm_assignment_2_grade" type="id"/>
+    <item name="asm_assignment_3_grade" type="id"/>
+    <item name="asm_assignment_4_grade" type="id"/>
 
 
 </resources>

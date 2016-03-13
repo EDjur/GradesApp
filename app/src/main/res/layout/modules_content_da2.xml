@@ -76,4 +76,52 @@
         android:layout_below="@+id/manSci_secondYear_modules_da2_third"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:id="@+id/manSci_secondYear_button_da2_calculateGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/manSci_secondYear_modules_da2_addAssignment"
+        android:layout_toEndOf="@+id/manSci_secondYear_modules_da2_addAssignment"
+        android:onClick="calculateGrades"
+        android:text="@string/calculate_grades_needed" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_da2_First_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_da2_First"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_da2_First"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_da2_twoOne_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_da2_twoOne"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_da2_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_da2_twoOne"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_da2_twoTwo_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_da2_twoTwo"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_da2_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_da2_twoTwo"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_da2_pass_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_da2_Pass"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_da2_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_da2_Pass"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
 </RelativeLayout>

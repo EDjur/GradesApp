@@ -11,5 +11,106 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="mansci.gradesapp.manSciModules.cat"
     tools:showIn="@layout/modules_activity_cat">
+    <Button
+        android:id="@+id/manSci_firstYear_modules_cat_addAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:onClick="addAssignment"
+        android:text="@string/add_assignment" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Exam grade needed"
+        android:id="@+id/manSci_firstYear_modules_cat_gradeNeeded"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 1st: "
+        android:id="@+id/manSci_firstYear_modules_cat_First"
+        android:layout_below="@+id/manSci_firstYear_modules_cat_gradeNeeded"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 2.1:"
+        android:id="@+id/manSci_firstYear_modules_cat_twoOne"
+        android:layout_below="@+id/manSci_firstYear_modules_cat_First"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 2.2:"
+        android:id="@+id/manSci_firstYear_modules_cat_twoTwo"
+        android:layout_below="@+id/manSci_firstYear_modules_cat_twoOne"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For a 3rd/pass:"
+        android:id="@+id/manSci_firstYear_modules_cat_third"
+        android:layout_below="@id/manSci_firstYear_modules_cat_twoTwo"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/manSci_firstYear_button_cat_calculateGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/manSci_firstYear_modules_cat_addAssignment"
+        android:layout_toEndOf="@+id/manSci_firstYear_modules_cat_addAssignment"
+        android:onClick="calculateGrades"
+        android:text="@string/calculate_grades_needed" />
+
+    <TextView
+        android:id="@+id/manSci_firstYear_modules_cat_First_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_firstYear_modules_cat_First"
+        android:layout_toEndOf="@id/manSci_firstYear_modules_cat_First"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_firstYear_modules_cat_twoOne_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_firstYear_modules_cat_twoOne"
+        android:layout_alignLeft="@id/manSci_firstYear_modules_cat_First"
+        android:layout_toEndOf="@id/manSci_firstYear_modules_cat_twoOne"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_firstYear_modules_cat_twoTwo_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_firstYear_modules_cat_twoTwo"
+        android:layout_alignLeft="@id/manSci_firstYear_modules_cat_First"
+        android:layout_toEndOf="@id/manSci_firstYear_modules_cat_twoTwo"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_firstYear_modules_cat_pass_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_firstYear_modules_cat_third"
+        android:layout_alignLeft="@id/manSci_firstYear_modules_cat_First"
+        android:layout_toEndOf="@id/manSci_firstYear_modules_cat_third"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 </RelativeLayout>
