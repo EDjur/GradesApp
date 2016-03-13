@@ -47,6 +47,13 @@ public class MFOM3 extends AppCompatActivity {
     }
 
     public void addAssignment(View view) {
+        /**
+         * Adds a new Assignment to the activity
+         * number_of_assignments keeps track of how many assignments have been added
+         */
+
+        // Sets up the parentLayout used
+        // Sets up different LayoutParams for the three different columns (Assignment, Weight, Grade)
         RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
@@ -55,7 +62,9 @@ public class MFOM3 extends AppCompatActivity {
         RelativeLayout.LayoutParams lpGrade = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
-
+        // Adds assignment depending on if previous assignments have been added
+        // Only has 4 assignments as max at the moment to keep view uncluttered
+        // Every case is split up into three parts: Assignment TextView, Weight EditText, Grade EditText
         switch (number_of_assignments) {
             case 0:
                 assignment1 = new TextView(this);
@@ -237,12 +246,17 @@ public class MFOM3 extends AppCompatActivity {
                 parentLayout.addView(assignment4Grade, lpGrade);
                 break;
         }
+        // Increases the assignment count
         number_of_assignments++;
 
 
     }
 
     public void calculateGrades(View view) {
+        /**
+         * Calculates grades needed on final exam depending on assignment grades and weights
+         * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
+         */
 
         int[] grades = new int[number_of_assignments];
         int[] weights = new int[number_of_assignments];
@@ -272,7 +286,6 @@ public class MFOM3 extends AppCompatActivity {
                         grades[1] = 0;
                         weights[1] = 0;
                     }
-
                     break;
                 case 2:
                     try {
@@ -295,14 +308,15 @@ public class MFOM3 extends AppCompatActivity {
                         grades[3] = 0;
                         weights[3] = 0;
                     }
-
                     break;
             }
         }
 
+        // Calculates grade needed
+        // Returns a List<Integer> of the grades needed where index 0 is for a pass, index 1 for a 2.2 etc.
         gradesNeeded = calculations.calculateGrades(weights, grades, number_of_assignments);
 
-        // CONSIDER REPLACING WITH FOR LOOP
+
         TextView first = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_First_grade);
         TextView twoOne = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoOne_grade);
         TextView twoTwo = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoTwo_grade);
@@ -315,6 +329,9 @@ public class MFOM3 extends AppCompatActivity {
     }
 
     public void hideKeyboard(View view) {
+        /**
+         * Method to manage hiding of keyboard when tapping the main view
+         */
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }

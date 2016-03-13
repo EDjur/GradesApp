@@ -38,8 +38,8 @@
         </activity>
         <activity
             android:name=".manSciModules.CT"
-            android:label="@string/title_activity_ct"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ct"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -48,8 +48,8 @@
         </activity>
         <activity
             android:name=".manSciModules.Finance"
-            android:label="@string/title_activity_finance"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_finance"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -58,8 +58,8 @@
         </activity>
         <activity
             android:name=".manSciModules.Strategy"
-            android:label="@string/title_activity_strategy"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_strategy"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -68,8 +68,8 @@
         </activity>
         <activity
             android:name=".manSciModules.Design"
-            android:label="@string/title_activity_design"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_design"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -78,8 +78,8 @@
         </activity>
         <activity
             android:name=".manSciModules.PTOM"
-            android:label="@string/title_activity_ptom"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ptom"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -88,8 +88,8 @@
         </activity>
         <activity
             android:name=".manSciModules.DA2"
-            android:label="@string/title_activity_da2"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_da2"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -98,8 +98,8 @@
         </activity>
         <activity
             android:name=".manSciModules.Minor"
-            android:label="@string/title_activity_minor"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_minor"
             android:parentActivityName=".ManSciSecondYear"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -117,14 +117,15 @@
         </activity>
         <activity
             android:name=".manSciModules.MFOM1"
-            android:label="@string/title_activity_mfom1"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mfom1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".manSciModules.cat"
-            android:label="@string/title_activity_cat"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_cat"
             android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
     </application>
 
