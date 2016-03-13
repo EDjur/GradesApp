@@ -10,8 +10,7 @@ import android.widget.TextView;
 import mansci.gradesapp.R;
 import mansci.gradesapp.calculations.Calculations;
 
-public class Strategy extends AppCompatActivity {
-
+public class Strategy extends AppCompatActivity implements Module {
     Calculations calculations;
 
     @Override
@@ -45,12 +44,45 @@ public class Strategy extends AppCompatActivity {
 
     }
 
-    public void hideKeyboard(View view) {
-        /**
-         * Method to manage hiding of keyboard when tapping the main view
-         */
-        //InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-        //inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    // Helper get-methods for generalisation of Calculations class
+    public int getAssignmentId(int index){
+        switch (index){
+            case 0:
+                return R.id.strategy_assignment_1;
+            case 1:
+                return R.id.strategy_assignment_2;
+            case 2:
+                return R.id.strategy_assignment_3;
+            case 3:
+                return R.id.strategy_assignment_4;
+        }
+        return 0;
+    }
+    public int getWeightId(int index){
+        switch (index){
+            case 0:
+                return R.id.strategy_assignment_1_weight;
+            case 1:
+                return R.id.strategy_assignment_2_weight;
+            case 2:
+                return R.id.strategy_assignment_3_weight;
+            case 3:
+                return R.id.strategy_assignment_4_weight;
+        }
+        return 0;
+    }
+    public int getGradeId(int index){
+        switch (index){
+            case 0:
+                return R.id.strategy_assignment_1_grade;
+            case 1:
+                return R.id.strategy_assignment_2_grade;
+            case 2:
+                return R.id.strategy_assignment_3_grade;
+            case 3:
+                return R.id.strategy_assignment_4_grade;
+        }
+        return 0;
     }
 
 }

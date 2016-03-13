@@ -3,21 +3,14 @@ package mansci.gradesapp.manSciModules;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.InputType;
-import android.util.TypedValue;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.util.List;
 
 import mansci.gradesapp.R;
 import mansci.gradesapp.calculations.Calculations;
 
-public class MFOM3 extends AppCompatActivity {
-
-
+public class MFOM3 extends AppCompatActivity implements Module {
     Calculations calculations;
 
     @Override
@@ -30,7 +23,6 @@ public class MFOM3 extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
 
     public void addAssignment(View view) {
         RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
@@ -52,11 +44,45 @@ public class MFOM3 extends AppCompatActivity {
 
     }
 
-    public void hideKeyboard(View view) {
-        /**
-         * Method to manage hiding of keyboard when tapping the main view
-         */
-        //InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-        //inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    // Helper get-methods for generalisation of Calculations class
+    public int getAssignmentId(int index){
+        switch (index){
+            case 0:
+                return R.id.mfom3_assignment_1;
+            case 1:
+                return R.id.mfom3_assignment_2;
+            case 2:
+                return R.id.mfom3_assignment_3;
+            case 3:
+                return R.id.mfom3_assignment_4;
+        }
+        return 0;
     }
+    public int getWeightId(int index){
+        switch (index){
+            case 0:
+                return R.id.mfom3_assignment_1_weight;
+            case 1:
+                return R.id.mfom3_assignment_2_weight;
+            case 2:
+                return R.id.mfom3_assignment_3_weight;
+            case 3:
+                return R.id.mfom3_assignment_4_weight;
+        }
+        return 0;
+    }
+    public int getGradeId(int index){
+        switch (index){
+            case 0:
+                return R.id.mfom3_assignment_1_grade;
+            case 1:
+                return R.id.mfom3_assignment_2_grade;
+            case 2:
+                return R.id.mfom3_assignment_3_grade;
+            case 3:
+                return R.id.mfom3_assignment_4_grade;
+        }
+        return 0;
+    }
+
 }

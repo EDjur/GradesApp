@@ -1,6 +1,7 @@
 package mansci.gradesapp.calculations;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.TypedValue;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mansci.gradesapp.R;
+import mansci.gradesapp.manSciModules.MFOM3;
+import mansci.gradesapp.manSciModules.Module;
 
 /**
  * Created by Elias on 12/03/2016.
@@ -40,11 +43,6 @@ public class Calculations {
     TextView assignment4;
     EditText assignment4Weight;
     EditText assignment4Grade;
-
-    TextView first;
-    TextView twoOne;
-    TextView twoTwo;
-    TextView pass;
 
     public Calculations(AppCompatActivity context){
         this.context = context;
@@ -193,7 +191,6 @@ public class Calculations {
         gradesNeeded.add((int) Math.ceil(needForFirst));
 
         return gradesNeeded;
-
     }
 
     public void addAssignment(RelativeLayout parentLayout) {
@@ -220,7 +217,7 @@ public class Calculations {
             case 0:
                 assignment1 = new TextView(context);
                 assignment1.setText(context.getResources().getString(R.string.assignment_1));
-                assignment1.setId(R.id.mfom3_assignment_1);
+                assignment1.setId(((Module)context).getAssignmentId(0));
                 assignment1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.setMargins(0, (int) context.getResources().getDimension(R.dimen.fifteen_dp), 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment1, lp);
@@ -235,12 +232,12 @@ public class Calculations {
                         }
                     }
                 });
-                assignment1Weight.setId(R.id.mfom3_assignment_1_weight);
+                assignment1Weight.setId(((Module)context).getWeightId(0));
                 assignment1Weight.setHint(context.getResources().getString(R.string.weight));
                 assignment1Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpWeight.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
-                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1);
-                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_1);
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, assignment1.getId());
+                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, assignment1.getId());
                 parentLayout.addView(assignment1Weight, lpWeight);
 
                 assignment1Grade = new EditText(context);
@@ -253,20 +250,20 @@ public class Calculations {
                         }
                     }
                 });
-                assignment1Grade.setId(R.id.mfom3_assignment_1_grade);
+                assignment1Grade.setId(((Module)context).getGradeId(0));
                 assignment1Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment1Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
-                lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_1_weight);
-                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_1_weight);
+                lpGrade.addRule(RelativeLayout.RIGHT_OF, assignment1Weight.getId());
+                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, assignment1Weight.getId());
                 parentLayout.addView(assignment1Grade, lpGrade);
                 break;
             case 1:
                 assignment2 = new TextView(context);
                 assignment2.setText(context.getResources().getString(R.string.assignment_2));
-                assignment2.setId(R.id.mfom3_assignment_2);
+                assignment2.setId(((Module)context).getAssignmentId(1));
                 assignment2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-                lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_1);
+                lp.addRule(RelativeLayout.BELOW, assignment1.getId());
                 lp.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment2, lp);
 
@@ -280,11 +277,11 @@ public class Calculations {
                         }
                     }
                 });
-                assignment2Weight.setId(R.id.mfom3_assignment_2_weight);
+                assignment2Weight.setId(((Module)context).getWeightId(1));
                 assignment2Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 assignment2Weight.setHint(context.getResources().getString(R.string.weight));
-                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2);
-                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_2);
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, assignment2.getId());
+                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, assignment2.getId());
                 lpWeight.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment2Weight, lpWeight);
 
@@ -298,20 +295,20 @@ public class Calculations {
                         }
                     }
                 });
-                assignment2Grade.setId(R.id.mfom3_assignment_2_grade);
+                assignment2Grade.setId(((Module)context).getGradeId(1));
                 assignment2Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment2Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
-                lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_2_weight);
-                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_2_weight);
+                lpGrade.addRule(RelativeLayout.RIGHT_OF, assignment2Weight.getId());
+                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, assignment2Weight.getId());
                 lpGrade.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment2Grade, lpGrade);
                 break;
             case 2:
                 assignment3 = new TextView(context);
                 assignment3.setText(context.getResources().getString(R.string.assignment_3));
-                assignment3.setId(R.id.mfom3_assignment_3);
+                assignment3.setId(((Module)context).getAssignmentId(2));
                 assignment3.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-                lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_2);
+                lp.addRule(RelativeLayout.BELOW, assignment2.getId());
                 lp.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment3, lp);
 
@@ -326,10 +323,10 @@ public class Calculations {
                     }
                 });
                 assignment3Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
-                assignment3Weight.setId(R.id.mfom3_assignment_3_weight);
+                assignment3Weight.setId(((Module)context).getWeightId(2));
                 assignment3Weight.setHint(context.getResources().getString(R.string.weight));
-                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3);
-                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_3);
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, assignment3.getId());
+                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, assignment3.getId());
                 lpWeight.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment3Weight, lpWeight);
 
@@ -343,24 +340,27 @@ public class Calculations {
                         }
                     }
                 });
-                assignment3Grade.setId(R.id.mfom3_assignment_3_grade);
+                assignment3Grade.setId(((Module)context).getGradeId(2));
                 assignment3Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment3Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
-                lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_3_weight);
-                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_3_weight);
+                lpGrade.addRule(RelativeLayout.RIGHT_OF, assignment3Weight.getId());
+                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, assignment3Weight.getId());
                 lpGrade.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment3Grade, lpGrade);
                 break;
             case 3:
                 assignment4 = new TextView(context);
                 assignment4.setText(context.getResources().getString(R.string.assignment_4));
-                assignment4.setId(R.id.mfom3_assignment_4);
+                assignment4.setId(((Module) context).getAssignmentId(3));
                 assignment4.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-                lp.addRule(RelativeLayout.BELOW, R.id.mfom3_assignment_3);
+                lp.addRule(RelativeLayout.BELOW, assignment3.getId());
                 lp.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment4, lp);
 
                 assignment4Weight = new EditText(context);
+                assignment4Weight.setId(((Module) context).getWeightId(3));
+                assignment4Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
+                assignment4Weight.setHint(context.getResources().getString(R.string.weight));
                 // Remove keyboard when tapping main view
                 assignment4Weight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                     @Override
@@ -370,15 +370,15 @@ public class Calculations {
                         }
                     }
                 });
-                assignment4Weight.setId(R.id.mfom3_assignment_4_weight);
-                assignment4Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
-                assignment4Weight.setHint(context.getResources().getString(R.string.weight));
-                lpWeight.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4);
-                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_4);
+                lpWeight.addRule(RelativeLayout.RIGHT_OF, assignment4.getId());
+                lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, assignment4.getId());
                 lpWeight.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment4Weight, lpWeight);
 
                 assignment4Grade = new EditText(context);
+                assignment4Grade.setId(((Module)context).getGradeId(3));
+                assignment4Grade.setHint(context.getResources().getString(R.string.grade));
+                assignment4Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 // Remove keyboard when tapping main view
                 assignment4Grade.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                     @Override
@@ -388,11 +388,8 @@ public class Calculations {
                         }
                     }
                 });
-                assignment4Grade.setId(R.id.mfom3_assignment_4_grade);
-                assignment4Grade.setHint(context.getResources().getString(R.string.grade));
-                assignment4Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
-                lpGrade.addRule(RelativeLayout.RIGHT_OF, R.id.mfom3_assignment_4_weight);
-                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, R.id.mfom3_assignment_4_weight);
+                lpGrade.addRule(RelativeLayout.RIGHT_OF, assignment4Weight.getId());
+                lpGrade.addRule(RelativeLayout.ALIGN_BASELINE, assignment4Weight.getId());
                 lpGrade.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment4Grade, lpGrade);
                 break;
@@ -407,7 +404,5 @@ public class Calculations {
         InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
-
-
 }
 
