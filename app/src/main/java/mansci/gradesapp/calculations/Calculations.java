@@ -44,7 +44,7 @@ public class Calculations {
     EditText assignment4Weight;
     EditText assignment4Grade;
 
-    public Calculations(AppCompatActivity context){
+    public Calculations(AppCompatActivity context) {
         this.context = context;
     }
 
@@ -69,7 +69,7 @@ public class Calculations {
         }
     }
 
-    public void calculateGrades(RelativeLayout parentLayout, TextView[] gradesList, AppCompatActivity context) {
+    public void calculateGrades(TextView[] gradesList) {
         /**
          * Calculates the grades needed at the final exam given 1-4 assignments and their corresponding weights and grades
          *
@@ -146,7 +146,8 @@ public class Calculations {
         pass.setText((gradesNeeded.get(0) > 100 ? "Unobtainable" : gradesNeeded.get(0).toString()));
 
     }
-    public List<Integer> calculateGrades(int[] weights, int[] grades){
+
+    public List<Integer> calculateGrades(int[] weights, int[] grades) {
         double needForThird = 0;
         double needForTwoTwo = 0;
         double needForTwoOne = 0;
@@ -217,7 +218,7 @@ public class Calculations {
             case 0:
                 assignment1 = new TextView(context);
                 assignment1.setText(context.getResources().getString(R.string.assignment_1));
-                assignment1.setId(((Module)context).getAssignmentId(0));
+                assignment1.setId(((Module) context).getAssignmentId(0));
                 assignment1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.setMargins(0, (int) context.getResources().getDimension(R.dimen.fifteen_dp), 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
                 parentLayout.addView(assignment1, lp);
@@ -232,7 +233,7 @@ public class Calculations {
                         }
                     }
                 });
-                assignment1Weight.setId(((Module)context).getWeightId(0));
+                assignment1Weight.setId(((Module) context).getWeightId(0));
                 assignment1Weight.setHint(context.getResources().getString(R.string.weight));
                 assignment1Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpWeight.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
@@ -250,7 +251,7 @@ public class Calculations {
                         }
                     }
                 });
-                assignment1Grade.setId(((Module)context).getGradeId(0));
+                assignment1Grade.setId(((Module) context).getGradeId(0));
                 assignment1Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment1Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
@@ -261,7 +262,7 @@ public class Calculations {
             case 1:
                 assignment2 = new TextView(context);
                 assignment2.setText(context.getResources().getString(R.string.assignment_2));
-                assignment2.setId(((Module)context).getAssignmentId(1));
+                assignment2.setId(((Module) context).getAssignmentId(1));
                 assignment2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.addRule(RelativeLayout.BELOW, assignment1.getId());
                 lp.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
@@ -277,7 +278,7 @@ public class Calculations {
                         }
                     }
                 });
-                assignment2Weight.setId(((Module)context).getWeightId(1));
+                assignment2Weight.setId(((Module) context).getWeightId(1));
                 assignment2Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 assignment2Weight.setHint(context.getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, assignment2.getId());
@@ -295,7 +296,7 @@ public class Calculations {
                         }
                     }
                 });
-                assignment2Grade.setId(((Module)context).getGradeId(1));
+                assignment2Grade.setId(((Module) context).getGradeId(1));
                 assignment2Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment2Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, assignment2Weight.getId());
@@ -306,7 +307,7 @@ public class Calculations {
             case 2:
                 assignment3 = new TextView(context);
                 assignment3.setText(context.getResources().getString(R.string.assignment_3));
-                assignment3.setId(((Module)context).getAssignmentId(2));
+                assignment3.setId(((Module) context).getAssignmentId(2));
                 assignment3.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
                 lp.addRule(RelativeLayout.BELOW, assignment2.getId());
                 lp.setMargins(0, 0, 0, (int) context.getResources().getDimension(R.dimen.fifteen_dp));
@@ -323,7 +324,7 @@ public class Calculations {
                     }
                 });
                 assignment3Weight.setRawInputType(InputType.TYPE_CLASS_NUMBER);
-                assignment3Weight.setId(((Module)context).getWeightId(2));
+                assignment3Weight.setId(((Module) context).getWeightId(2));
                 assignment3Weight.setHint(context.getResources().getString(R.string.weight));
                 lpWeight.addRule(RelativeLayout.RIGHT_OF, assignment3.getId());
                 lpWeight.addRule(RelativeLayout.ALIGN_BASELINE, assignment3.getId());
@@ -340,7 +341,7 @@ public class Calculations {
                         }
                     }
                 });
-                assignment3Grade.setId(((Module)context).getGradeId(2));
+                assignment3Grade.setId(((Module) context).getGradeId(2));
                 assignment3Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment3Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 lpGrade.addRule(RelativeLayout.RIGHT_OF, assignment3Weight.getId());
@@ -376,7 +377,7 @@ public class Calculations {
                 parentLayout.addView(assignment4Weight, lpWeight);
 
                 assignment4Grade = new EditText(context);
-                assignment4Grade.setId(((Module)context).getGradeId(3));
+                assignment4Grade.setId(((Module) context).getGradeId(3));
                 assignment4Grade.setHint(context.getResources().getString(R.string.grade));
                 assignment4Grade.setRawInputType(InputType.TYPE_CLASS_NUMBER);
                 // Remove keyboard when tapping main view
@@ -397,6 +398,7 @@ public class Calculations {
         // Increases the assignment count
         number_of_assignments++;
     }
+
     public void hideKeyboard(View view) {
         /**
          * Method to manage hiding of keyboard when tapping the main view

@@ -40,13 +40,13 @@ public class MFOM3 extends AppCompatActivity implements Module {
         gradesList[1] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoOne_grade);
         gradesList[2] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoTwo_grade);
         gradesList[3] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_pass_grade);
-        calculations.calculateGrades(parentLayout, gradesList, this);
+        calculations.calculateGrades(gradesList);
 
     }
 
     // Helper get-methods for generalisation of Calculations class
-    public int getAssignmentId(int index){
-        switch (index){
+    public int getAssignmentId(int index) {
+        switch (index) {
             case 0:
                 return R.id.mfom3_assignment_1;
             case 1:
@@ -58,8 +58,9 @@ public class MFOM3 extends AppCompatActivity implements Module {
         }
         return 0;
     }
-    public int getWeightId(int index){
-        switch (index){
+
+    public int getWeightId(int index) {
+        switch (index) {
             case 0:
                 return R.id.mfom3_assignment_1_weight;
             case 1:
@@ -71,8 +72,9 @@ public class MFOM3 extends AppCompatActivity implements Module {
         }
         return 0;
     }
-    public int getGradeId(int index){
-        switch (index){
+
+    public int getGradeId(int index) {
+        switch (index) {
             case 0:
                 return R.id.mfom3_assignment_1_grade;
             case 1:
