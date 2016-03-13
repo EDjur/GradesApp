@@ -2,8 +2,6 @@ package mansci.gradesapp.manSciModules;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
@@ -14,10 +12,6 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import mansci.gradesapp.R;
@@ -250,18 +244,6 @@ public class MFOM3 extends AppCompatActivity {
 
     public void calculateGrades(View view) {
 
-        /// TESTING PURPOSES
-        /*assignment1Weight.setText("5");
-        assignment2Weight.setText("5");
-        assignment3Weight.setText("5");
-        assignment4Weight.setText("5");
-
-        assignment1Grade.setText("96");
-        assignment2Grade.setText("100");
-        assignment3Grade.setText("100");
-        assignment4Grade.setText("100");*/
-
-
         int[] grades = new int[number_of_assignments];
         int[] weights = new int[number_of_assignments];
         List<Integer> gradesNeeded;
@@ -301,8 +283,9 @@ public class MFOM3 extends AppCompatActivity {
         twoTwo.setText(gradesNeeded.get(1).toString());
         pass.setText(gradesNeeded.get(0).toString());
     }
+
     public void hideKeyboard(View view) {
-        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }
