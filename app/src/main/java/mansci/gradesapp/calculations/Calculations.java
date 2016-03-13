@@ -167,7 +167,7 @@ public class Calculations {
         }
         // Conversion needed because of weights being input as percentages
         haveSoFar *= 0.01;
-        int finalExamWeight = 100 - weightSum;
+        int finalExamWeight = (weightSum <= 100 ? 100 - weightSum : 0);
 
         // Avoid negative values
         double needFor40 = (haveSoFar >= 40 ? 0 : 40 - haveSoFar);
