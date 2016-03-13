@@ -124,9 +124,15 @@
             android:name=".manSciModules.cat"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_cat"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manSciModules.be1"
+            android:label="@string/title_activity_be1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manSciModules.asm"
+            android:label="@string/title_activity_asm"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

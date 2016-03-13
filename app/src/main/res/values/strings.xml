@@ -35,14 +35,28 @@
     <string name="manSci_secondYear_minor">IEP Minor</string>
 
     <!-- Toolbar Names -->
+    <!-- YEAR 2 -->
+    <!-- TERM 1 -->
     <string name="title_activity_mfom3">Mathematical Foundations of Management III</string>
     <string name="title_activity_ct">Computational Thinking</string>
     <string name="title_activity_finance">Finance I</string>
     <string name="title_activity_strategy">Strategy by Design</string>
+    <!-- TERM 2 -->
     <string name="title_activity_design">Design</string>
     <string name="title_activity_ptom">Product, Technology, and Operations Management</string>
     <string name="title_activity_da2">Data Analytics II</string>
     <string name="title_activity_minor">IEP Minor</string>
+    <!-- YEAR 1 -->
+    <!-- TERM 1 -->
+    <string name="title_activity_mfom1">Mathematical Foundations of Management I</string>
+    <string name="title_activity_cat">Critical Analytical Thinking</string>
+    <string name="title_activity_asm">Art and Science of Management</string>
+    <string name="title_activity_be1">Business Economics I</string>
+    <!-- TERM 2 -->
+    <string name="title_activity_bs">Behavioural Science</string>
+    <string name="title_activity_da1">Data Analytics I</string>
+    <string name="title_activity_mfom2">Mathematical Foundations of Management II</string>
+    <string name="title_activity_be2">Business Economics II</string>
 
     <!-- Assignment Names -->
     <string name="assignment_1">Assignment 1</string>
@@ -51,8 +65,7 @@
     <string name="assignment_4">Assignment 4</string>
     <string name="assignment_5">Assignment 5</string>
     <string name="title_activity_man_sci_first_year">ManSciFirstYear</string>
-    <string name="title_activity_mfom1">MFOM1</string>
-    <string name="title_activity_cat">cat</string>
+
 
     <!-- Grades and Weights -->
     <string name="weight">Weight (%)</string>
