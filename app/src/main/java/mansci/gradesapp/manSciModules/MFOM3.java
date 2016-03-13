@@ -36,17 +36,21 @@ public class MFOM3 extends AppCompatActivity {
     EditText assignment4Weight;
     EditText assignment4Grade;
 
+    Calculations calculations;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modules_activity_mfom3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        calculations = new Calculations(this);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void addAssignment(View view) {
+    // Deprecated. Don't use.
+    public void old_addAssignment(View view) {
         /**
          * Adds a new Assignment to the activity
          * number_of_assignments keeps track of how many assignments have been added
@@ -252,7 +256,8 @@ public class MFOM3 extends AppCompatActivity {
 
     }
 
-    public void calculateGrades(View view) {
+    // Deprecated. Don't use.
+    public void old_calculateGrades(View view) {
         /**
          * Calculates grades needed on final exam depending on assignment grades and weights
          * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
@@ -261,7 +266,7 @@ public class MFOM3 extends AppCompatActivity {
         int[] grades = new int[number_of_assignments];
         int[] weights = new int[number_of_assignments];
         List<Integer> gradesNeeded;
-        Calculations calculations = new Calculations();
+        Calculations calculations = new Calculations(this);
 
         for (int i = 0; i < number_of_assignments; i++) {
             switch (i) {
@@ -314,7 +319,7 @@ public class MFOM3 extends AppCompatActivity {
 
         // Calculates grade needed
         // Returns a List<Integer> of the grades needed where index 0 is for a pass, index 1 for a 2.2 etc.
-        gradesNeeded = calculations.calculateGrades(weights, grades, number_of_assignments);
+        //gradesNeeded = calculations.calculateGrades(weights, grades, number_of_assignments);
 
 
         TextView first = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_First_grade);
@@ -322,17 +327,37 @@ public class MFOM3 extends AppCompatActivity {
         TextView twoTwo = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoTwo_grade);
         TextView pass = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_pass_grade);
 
-        first.setText((gradesNeeded.get(3) > 100 ? "Unobtainable" : gradesNeeded.get(3).toString()));
-        twoOne.setText((gradesNeeded.get(2) > 100 ? "Unobtainable" : gradesNeeded.get(2).toString()));
-        twoTwo.setText((gradesNeeded.get(1) > 100 ? "Unobtainable" : gradesNeeded.get(1).toString()));
-        pass.setText((gradesNeeded.get(0) > 100 ? "Unobtainable" : gradesNeeded.get(0).toString()));
+        //first.setText((gradesNeeded.get(3) > 100 ? "Unobtainable" : gradesNeeded.get(3).toString()));
+        //twoOne.setText((gradesNeeded.get(2) > 100 ? "Unobtainable" : gradesNeeded.get(2).toString()));
+        //twoTwo.setText((gradesNeeded.get(1) > 100 ? "Unobtainable" : gradesNeeded.get(1).toString()));
+        //pass.setText((gradesNeeded.get(0) > 100 ? "Unobtainable" : gradesNeeded.get(0).toString()));
     }
 
+    public void addAssignment(View view){
+        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
+        calculations.addAssignment(parentLayout);
+    }
+
+    public void calculateGrades(View view)
+    {
+        /**
+         * Calculates grades needed on final exam depending on assignment grades and weights
+         * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
+         */
+        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
+        TextView[] gradesList = new TextView[4];
+        gradesList[0] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_First_grade);
+        gradesList[1] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoOne_grade);
+        gradesList[2] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoTwo_grade);
+        gradesList[3] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_pass_grade);
+        calculations.calculateGrades(parentLayout, gradesList, this);
+
+    }
     public void hideKeyboard(View view) {
         /**
          * Method to manage hiding of keyboard when tapping the main view
          */
-        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        //InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        //inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }
