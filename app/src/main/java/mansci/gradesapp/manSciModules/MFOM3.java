@@ -279,7 +279,7 @@ public class MFOM3 extends AppCompatActivity {
                 case 1:
                     try {
                         grades[1] = Integer.parseInt(assignment2Grade.getText().toString());
-                        weights[1] = Integer.parseInt(assignment1Weight.getText().toString());
+                        weights[1] = Integer.parseInt(assignment2Weight.getText().toString());
                     }
                     // Sets values to 0 if they don't exist
                     catch (Exception e) {
@@ -290,7 +290,7 @@ public class MFOM3 extends AppCompatActivity {
                 case 2:
                     try {
                         grades[2] = Integer.parseInt(assignment3Grade.getText().toString());
-                        weights[2] = Integer.parseInt(assignment1Weight.getText().toString());
+                        weights[2] = Integer.parseInt(assignment3Weight.getText().toString());
                     }
                     // Sets values to 0 if they don't exist
                     catch (Exception e) {
@@ -301,7 +301,7 @@ public class MFOM3 extends AppCompatActivity {
                 case 3:
                     try {
                         grades[3] = Integer.parseInt(assignment4Grade.getText().toString());
-                        weights[3] = Integer.parseInt(assignment1Weight.getText().toString());
+                        weights[3] = Integer.parseInt(assignment4Weight.getText().toString());
                     }
                     // Sets values to 0 if they don't exist
                     catch (Exception e) {
@@ -322,10 +322,10 @@ public class MFOM3 extends AppCompatActivity {
         TextView twoTwo = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoTwo_grade);
         TextView pass = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_pass_grade);
 
-        first.setText(gradesNeeded.get(3).toString());
-        twoOne.setText(gradesNeeded.get(2).toString());
-        twoTwo.setText(gradesNeeded.get(1).toString());
-        pass.setText(gradesNeeded.get(0).toString());
+        first.setText((gradesNeeded.get(3) > 100 ? "Unobtainable" : gradesNeeded.get(3).toString()));
+        twoOne.setText((gradesNeeded.get(2) > 100 ? "Unobtainable" : gradesNeeded.get(2).toString()));
+        twoTwo.setText((gradesNeeded.get(1) > 100 ? "Unobtainable" : gradesNeeded.get(1).toString()));
+        pass.setText((gradesNeeded.get(0) > 100 ? "Unobtainable" : gradesNeeded.get(0).toString()));
     }
 
     public void hideKeyboard(View view) {

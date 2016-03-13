@@ -65,10 +65,11 @@ public class Calculations {
         haveSoFar *= 0.01;
         int finalExamWeight = 100 - weightSum;
 
-        double needFor40 = 40 - haveSoFar;
-        double needFor50 = 50 - haveSoFar;
-        double needFor60 = 60 - haveSoFar;
-        double needFor70 = 70 - haveSoFar;
+        // Avoid negative values
+        double needFor40 = (haveSoFar >= 40 ? 0 : 40 - haveSoFar);
+        double needFor50 = (haveSoFar >= 50 ? 0 : 50 - haveSoFar);
+        double needFor60 = (haveSoFar >= 60 ? 0 : 60 - haveSoFar);
+        double needFor70 = (haveSoFar >= 70 ? 0 : 70 - haveSoFar);
 
         // Avoid division by 0
         if (finalExamWeight != 0) {
