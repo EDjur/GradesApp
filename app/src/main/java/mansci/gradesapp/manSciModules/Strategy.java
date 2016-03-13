@@ -1,13 +1,9 @@
 package mansci.gradesapp.manSciModules;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -17,6 +13,7 @@ import mansci.gradesapp.calculations.Calculations;
 public class Strategy extends AppCompatActivity {
 
     Calculations calculations;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,13 +24,13 @@ public class Strategy extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-    public void addAssignment(View view){
+
+    public void addAssignment(View view) {
         RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.manSci_secondYear_strategy_relative_layout);
         calculations.addAssignment(parentLayout);
     }
 
-    public void calculateGrades(View view)
-    {
+    public void calculateGrades(View view) {
         /**
          * Calculates grades needed on final exam depending on assignment grades and weights
          * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
