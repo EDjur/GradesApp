@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="mansci.gradesapp.manSciModules.MFOM1"
-    tools:showIn="@layout/activity_mfom1">
+    tools:showIn="@layout/modules_activity_mfom1">
     <Button
         android:id="@+id/manSci_firstYear_modules_mfom1_addAssignment"
         android:layout_width="wrap_content"
