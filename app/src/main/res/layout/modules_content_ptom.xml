@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Exam grade needed"
+        android:text="@string/exam_grade_needed"
         android:id="@+id/manSci_secondYear_modules_ptom_gradeNeeded"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="For a 1st: "
+        android:text="@string/for_a_first"
         android:id="@+id/manSci_secondYear_modules_ptom_First"
         android:layout_below="@+id/manSci_secondYear_modules_ptom_gradeNeeded"
         android:layout_alignParentStart="true" />
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="For a 2.1:"
+        android:text="@string/for_a_twoOne"
         android:id="@+id/manSci_secondYear_modules_ptom_twoOne"
         android:layout_below="@+id/manSci_secondYear_modules_ptom_First"
         android:layout_alignParentStart="true" />
@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="For a 2.2:"
+        android:text="@string/for_a_twoTwo"
         android:id="@+id/manSci_secondYear_modules_ptom_twoTwo"
         android:layout_below="@+id/manSci_secondYear_modules_ptom_twoOne"
         android:layout_alignParentStart="true" />
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="To pass"
+        android:text="@string/for_a_third"
         android:id="@+id/manSci_secondYear_modules_ptom_pass"
         android:layout_below="@id/manSci_secondYear_modules_ptom_twoTwo"
         android:layout_alignParentStart="true" />

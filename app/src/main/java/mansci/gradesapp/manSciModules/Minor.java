@@ -15,6 +15,7 @@ import mansci.gradesapp.calculations.Calculations;
 public class Minor extends AppCompatActivity implements Module {
 
     Calculations calculations;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

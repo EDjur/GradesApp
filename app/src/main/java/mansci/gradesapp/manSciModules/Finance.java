@@ -12,7 +12,7 @@ import android.widget.TextView;
 import mansci.gradesapp.R;
 import mansci.gradesapp.calculations.Calculations;
 
-public class Finance extends AppCompatActivity {
+public class Finance extends AppCompatActivity implements Module {
     Calculations calculations;
 
     @Override

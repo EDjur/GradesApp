@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Exam grade needed"
+        android:text="@string/exam_grade_needed"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -39,7 +39,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_gradeNeeded"
         android:layout_marginEnd="5dp"
-        android:text="For a 1st:"
+        android:text="@string/for_a_first"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_First"
         android:layout_marginEnd="5dp"
-        android:text="For a 2.1:"
+        android:text="@string/for_a_twoOne"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_twoOne"
         android:layout_marginEnd="5dp"
-        android:text="For a 2.2:"
+        android:text="@string/for_a_twoTwo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
@@ -70,7 +70,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/manSci_secondYear_modules_strategy_twoTwo"
         android:layout_marginEnd="5dp"
-        android:text="For a 3rd/pass:"
+        android:text="@string/for_a_third"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
