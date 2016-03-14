@@ -25,6 +25,8 @@ public class MFOM1 extends AppCompatActivity implements Module {
         setSupportActionBar(toolbar);
         calculations = new Calculations(this);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     public void addAssignment(View view) {

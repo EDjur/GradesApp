@@ -119,20 +119,40 @@
             android:name=".manSciModules.MFOM1"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_mfom1"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
         <activity
             android:name=".manSciModules.cat"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_cat"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
         <activity
             android:name=".manSciModules.be1"
             android:label="@string/title_activity_be1"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
         <activity
             android:name=".manSciModules.asm"
             android:label="@string/title_activity_asm"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
         <activity
             android:name=".manSciModules.bs"
             android:label="@string/title_activity_bs"

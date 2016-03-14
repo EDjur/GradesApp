@@ -23,6 +23,8 @@ public class cat extends AppCompatActivity implements Module {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         calculations = new Calculations(this);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void addAssignment(View view) {
