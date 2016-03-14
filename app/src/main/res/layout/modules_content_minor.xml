@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="mansci.gradesapp.manSciModules.Minor"
+    tools:context="mansci.gradesapp.manSciModules.minor"
     tools:showIn="@layout/modules_activity_minor">
 
     <Button
@@ -23,6 +23,15 @@
         android:layout_marginBottom="55dp"
         android:onClick="addAssignment"
         android:text="@string/add_assignment" />
+
+    <Button
+        android:id="@+id/manSci_secondYear_button_strategy_calculateGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/manSci_secondYear_modules_minor_addAssignment"
+        android:layout_toEndOf="@+id/manSci_secondYear_modules_minor_addAssignment"
+        android:onClick="calculateGrades"
+        android:text="@string/calculate_grades_needed" />
 
     <TextView
         android:id="@+id/manSci_secondYear_modules_minor_gradeNeeded"
@@ -61,21 +70,51 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/manSci_secondYear_modules_minor_third"
+        android:id="@+id/manSci_secondYear_modules_minor_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@id/manSci_secondYear_modules_minor_twoTwo"
-        android:text="For a 3rd:"
+        android:text="To pass"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/manSci_secondYear_modules_minor_Pass"
+        android:id="@+id/manSci_secondYear_modules_minor_First_grade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/manSci_secondYear_modules_minor_third"
-        android:text="To Pass:"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_minor_First"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_minor_First"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_minor_twoOne_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_minor_twoOne"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_minor_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_minor_twoOne"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_minor_twoTwo_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_minor_twoTwo"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_minor_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_minor_twoTwo"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_minor_pass_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_minor_pass"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_minor_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_minor_pass"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

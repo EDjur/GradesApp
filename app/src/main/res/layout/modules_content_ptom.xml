@@ -24,6 +24,15 @@
         android:onClick="addAssignment"
         android:text="@string/add_assignment" />
 
+    <Button
+        android:id="@+id/manSci_secondYear_button_strategy_calculateGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/manSci_secondYear_modules_ptom_addAssignment"
+        android:layout_toEndOf="@+id/manSci_secondYear_modules_ptom_addAssignment"
+        android:onClick="calculateGrades"
+        android:text="@string/calculate_grades_needed" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,17 +73,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="For a 3rd:"
-        android:id="@+id/manSci_secondYear_modules_ptom_third"
+        android:text="To pass"
+        android:id="@+id/manSci_secondYear_modules_ptom_pass"
         android:layout_below="@id/manSci_secondYear_modules_ptom_twoTwo"
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:id="@+id/manSci_secondYear_modules_ptom_First_grade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="To Pass:"
-        android:id="@+id/manSci_secondYear_modules_ptom_Pass"
-        android:layout_below="@+id/manSci_secondYear_modules_ptom_third"
-        android:layout_alignParentStart="true" />
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_ptom_First"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_ptom_First"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_ptom_twoOne_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_ptom_twoOne"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_ptom_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_ptom_twoOne"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_ptom_twoTwo_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_ptom_twoTwo"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_ptom_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_ptom_twoTwo"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manSci_secondYear_modules_ptom_pass_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/manSci_secondYear_modules_ptom_pass"
+        android:layout_alignLeft="@id/manSci_secondYear_modules_ptom_First_grade"
+        android:layout_toEndOf="@id/manSci_secondYear_modules_ptom_pass"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
 </RelativeLayout>

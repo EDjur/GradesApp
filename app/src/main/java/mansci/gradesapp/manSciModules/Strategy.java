@@ -34,7 +34,6 @@ public class Strategy extends AppCompatActivity implements Module {
          * Calculates grades needed on final exam depending on assignment grades and weights
          * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
          */
-        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.manSci_secondYear_strategy_relative_layout);
         TextView[] gradesList = new TextView[4];
         gradesList[0] = (TextView) findViewById(R.id.manSci_secondYear_modules_strategy_First_grade);
         gradesList[1] = (TextView) findViewById(R.id.manSci_secondYear_modules_strategy_twoOne_grade);
