@@ -2,21 +2,19 @@ package mansci.gradesapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-import mansci.gradesapp.manSciModules.CT;
-import mansci.gradesapp.manSciModules.DA2;
-import mansci.gradesapp.manSciModules.Design;
-import mansci.gradesapp.manSciModules.Finance;
-import mansci.gradesapp.manSciModules.MFOM3;
-import mansci.gradesapp.manSciModules.Minor;
-import mansci.gradesapp.manSciModules.PTOM;
-import mansci.gradesapp.manSciModules.Strategy;
+import mansci.gradesapp.manSciModules.MFOM1;
+import mansci.gradesapp.manSciModules.asm;
+import mansci.gradesapp.manSciModules.be1;
+import mansci.gradesapp.manSciModules.cat;
+import mansci.gradesapp.manSciModules.da1;
+import mansci.gradesapp.manSciModules.bs;
+import mansci.gradesapp.manSciModules.MFOM2;
+import mansci.gradesapp.manSciModules.be2;
 
 public class ManSciFirstYear extends AppCompatActivity {
 
@@ -29,40 +27,41 @@ public class ManSciFirstYear extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-    public void chooseModule(View view){
+
+    public void chooseModule(View view) {
         Button button = (Button) view;
 
-        switch (button.getId()){
+        switch (button.getId()) {
             case R.id.manSci_firstYear_button_MFOM1:
-                Intent MFOMIntent = new Intent(this, MFOM3.class);
+                Intent MFOMIntent = new Intent(this, MFOM1.class);
                 startActivity(MFOMIntent);
                 break;
             case R.id.manSci_firstYear_button_cat:
-                Intent ctIntent = new Intent(this, CT.class);
+                Intent ctIntent = new Intent(this, cat.class);
                 startActivity(ctIntent);
                 break;
             case R.id.manSci_firstYear_button_be1:
-                Intent financeIntent = new Intent(this, Finance.class);
+                Intent financeIntent = new Intent(this, be1.class);
                 startActivity(financeIntent);
                 break;
             case R.id.manSci_firstYear_button_asm:
-                Intent strategyIntent = new Intent(this, Strategy.class);
+                Intent strategyIntent = new Intent(this, asm.class);
                 startActivity(strategyIntent);
                 break;
             case R.id.manSci_firstYear_button_bs:
-                Intent DAIntent = new Intent(this, DA2.class);
+                Intent DAIntent = new Intent(this, bs.class);
                 startActivity(DAIntent);
                 break;
             case R.id.manSci_firstYear_button_da1:
-                Intent designIntent = new Intent(this, Design.class);
+                Intent designIntent = new Intent(this, da1.class);
                 startActivity(designIntent);
                 break;
             case R.id.manSci_firstYear_button_be2:
-                Intent PTOMIntent = new Intent(this, PTOM.class);
+                Intent PTOMIntent = new Intent(this, be2.class);
                 startActivity(PTOMIntent);
                 break;
             case R.id.manSci_firstYear_button_MFOM2:
-                Intent minorIntent = new Intent(this, Minor.class);
+                Intent minorIntent = new Intent(this, MFOM2.class);
                 startActivity(minorIntent);
                 break;
         }

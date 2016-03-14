@@ -132,7 +132,43 @@
         <activity
             android:name=".manSciModules.asm"
             android:label="@string/title_activity_asm"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manSciModules.bs"
+            android:label="@string/title_activity_bs"
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.da1"
+            android:label="@string/title_activity_da1"
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.be2"
+            android:label="@string/title_activity_be2"
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
+        <activity
+            android:name=".manSciModules.MFOM2"
+            android:label="@string/title_activity_mfom2"
+            android:parentActivityName=".ManSciFirstYear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mansci.gradesapp.ManSciFirstYear" />
+        </activity>
     </application>
 
 </manifest>
