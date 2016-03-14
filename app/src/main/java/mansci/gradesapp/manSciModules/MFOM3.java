@@ -25,7 +25,7 @@ public class MFOM3 extends AppCompatActivity implements Module {
     }
 
     public void addAssignment(View view) {
-        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
+        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.manSci_secondYear_mfom3_relative_layout);
         calculations.addAssignment(parentLayout);
     }
 
@@ -34,7 +34,7 @@ public class MFOM3 extends AppCompatActivity implements Module {
          * Calculates grades needed on final exam depending on assignment grades and weights
          * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
          */
-        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.mfom_relative_layout);
+        RelativeLayout parentLayout = (RelativeLayout) findViewById(R.id.manSci_secondYear_mfom3_relative_layout);
         TextView[] gradesList = new TextView[4];
         gradesList[0] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_First_grade);
         gradesList[1] = (TextView) findViewById(R.id.manSci_secondYear_modules_mfom_twoOne_grade);
