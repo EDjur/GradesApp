@@ -37,12 +37,13 @@ public class DA2 extends AppCompatActivity implements Module {
          * Calculates grades needed on final exam depending on assignment grades and weights
          * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
          */
+        String module = "DA2";
         TextView[] gradesList = new TextView[4];
         gradesList[0] = (TextView) findViewById(R.id.manSci_secondYear_modules_da2_First_grade);
         gradesList[1] = (TextView) findViewById(R.id.manSci_secondYear_modules_da2_twoOne_grade);
         gradesList[2] = (TextView) findViewById(R.id.manSci_secondYear_modules_da2_twoTwo_grade);
         gradesList[3] = (TextView) findViewById(R.id.manSci_secondYear_modules_da2_pass_grade);
-        calculations.calculateGrades(gradesList);
+        calculations.calculateGrades(gradesList, module);
 
     }
 

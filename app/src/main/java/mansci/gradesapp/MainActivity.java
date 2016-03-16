@@ -3,10 +3,14 @@ package mansci.gradesapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import mansci.gradesapp.calculations.Calculations;
 
 public class MainActivity extends Activity {
 
@@ -53,9 +57,11 @@ public class MainActivity extends Activity {
 
 
         }
+    }
+    public void bestModule(View view){
+        TextView textView = (TextView) view;
+        Calculations calculations = new Calculations(this);
 
-
-
-
+        textView.setText(calculations.summary());
     }
 }

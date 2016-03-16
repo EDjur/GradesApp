@@ -38,4 +38,14 @@
         android:onClick="chooseYear"
         android:text="@string/main_button_1styear" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YOUR BEST MODULE XDD"
+        android:id="@+id/main_textview_bestModule"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="bestModule"/>
+
 </RelativeLayout>

@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +26,10 @@ public class Calculations {
     /**
      * Main calculation class used by all modules
      */
+    private static List<Assignment> assignmentList;
     private int number_of_assignments = 0;
-    private AppCompatActivity context;
+    private Activity context;
+    private List<Integer> gradesNeeded;
     // Set up TextView's
     TextView assignment1;
     EditText assignment1Weight;
@@ -47,17 +50,31 @@ public class Calculations {
     public Calculations(AppCompatActivity context) {
         this.context = context;
     }
+    public Calculations(Activity context){
+        this.context = context;
+    }
 
+    public List<Assignment> getAssignmentList(){
+        return assignmentList;
+    }
     public class Assignment {
         /**
          * Helper class to keep track of weights and their corresponding grades
          */
         int weight;
         int grade;
+        String name;
+        List<Integer> gradesNeeded;
 
         public Assignment(int weight, int grade) {
             this.weight = weight;
             this.grade = grade;
+            this.name = "";
+        }
+        public Assignment(int weight, int grade, String module, List<Integer> gradesNeeded){
+            this.name = module;
+            this.gradesNeeded = new ArrayList<>();
+            this.gradesNeeded = gradesNeeded;
         }
 
         public int getWeight() {
@@ -67,9 +84,17 @@ public class Calculations {
         public int getGrade() {
             return grade;
         }
+        public String getName(){
+            return name;
+        }
+
+        public List<Integer> getGradesNeeded(){
+            return gradesNeeded;
+        }
     }
 
-    public void calculateGrades(TextView[] gradesList) {
+
+    public void calculateGrades(TextView[] gradesList, String module) {
         /**
          * Calculates the grades needed at the final exam given 1-4 assignments and their corresponding weights and grades
          *
@@ -140,11 +165,38 @@ public class Calculations {
         TextView twoTwo = gradesList[2];
         TextView pass = gradesList[3];
 
+        // For summary screen
+        assignmentList = new ArrayList<>();
+        for(int i = 0; i < number_of_assignments; i++){
+            assignmentList.add(new Assignment(weights[0], grades[0], module, gradesNeeded));
+        }
+
         first.setText((gradesNeeded.get(3) > 100 ? "Unobtainable" : gradesNeeded.get(3).toString()));
         twoOne.setText((gradesNeeded.get(2) > 100 ? "Unobtainable" : gradesNeeded.get(2).toString()));
         twoTwo.setText((gradesNeeded.get(1) > 100 ? "Unobtainable" : gradesNeeded.get(1).toString()));
         pass.setText((gradesNeeded.get(0) > 100 ? "Unobtainable" : gradesNeeded.get(0).toString()));
+    }
+    public String summary(){
+        // Find module with lowest required grade for first if it's not 0
 
+        int index = 0;
+        //String module;
+
+        for(int i = 0; i < assignmentList.size();i++){
+            if(i != assignmentList.size()){
+                if (assignmentList.get(i).getGradesNeeded().get(0) < assignmentList.get(i+1).getGradesNeeded().get(0)){
+                    index = i+1;
+                }
+            }else{
+                if(assignmentList.get(i).getGradesNeeded().get(0) < assignmentList.get(0).getGradesNeeded().get(0)){
+                    index = 0;
+                }
+            }
+            // Find IndexOf of index and find the module:
+
+
+        }
+        return assignmentList.get(index).getName();
     }
 
     public List<Integer> calculateGrades(int[] weights, int[] grades) {

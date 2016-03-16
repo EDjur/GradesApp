@@ -39,12 +39,13 @@ public class MFOM1 extends AppCompatActivity implements Module {
          * Calculates grades needed on final exam depending on assignment grades and weights
          * If button is pressed without any assignments filled in all grades and weights are defaulted to 0
          */
+        String module = "MFOM1";
         TextView[] gradesList = new TextView[4];
         gradesList[0] = (TextView) findViewById(R.id.manSci_firstYear_modules_mfom1_First_grade);
         gradesList[1] = (TextView) findViewById(R.id.manSci_firstYear_modules_mfom1_twoOne_grade);
         gradesList[2] = (TextView) findViewById(R.id.manSci_firstYear_modules_mfom1_twoTwo_grade);
         gradesList[3] = (TextView) findViewById(R.id.manSci_firstYear_modules_mfom1_pass_grade);
-        calculations.calculateGrades(gradesList);
+        calculations.calculateGrades(gradesList, module);
 
     }
 
