@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_toStartOf="@+id/main_button_2ndyear"
         android:text="@string/main_textview_chooseyear"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -22,11 +21,10 @@
         android:id="@+id/main_button_2ndyear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_button_1styear"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp"
         android:onClick="chooseYear"
-        android:text="@string/main_button_2ndyear" />
+        android:text="@string/main_button_2ndyear"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/main_button_1styear"
@@ -38,14 +36,15 @@
         android:onClick="chooseYear"
         android:text="@string/main_button_1styear" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="YOUR BEST MODULE XDD"
-        android:id="@+id/main_textview_bestModule"
-        android:layout_alignParentBottom="true"
+        android:text="View Modules"
+        android:id="@+id/main_button_viewModules"
+        android:onClick="viewModules"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/main_button_2ndyear"
         android:layout_centerHorizontal="true"
-        android:onClick="bestModule"/>
+        android:layout_marginTop="54dp" />
 
 </RelativeLayout>

@@ -75,6 +75,7 @@
     <string name="for_a_twoTwo">For a 2.2:</string>
     <string name="for_a_third">For a 3rd: </string>
     <string name="exam_grade_needed">Exam grade needed:</string>
+    <string name="title_activity_view_modules">viewModules</string>
 
 
 </resources>

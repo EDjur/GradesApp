@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:paddingTop="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="mansci.gradesapp.ManSciFirstYear"
+            tools:showIn="@layout/activity_man_sci_first_year">
+
+
+            <TextView
+                android:id="@+id/firstYear_textview_termOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:text="@string/modules_termOne"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <!-- Sets the bottom margin -->
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_MFOM1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/firstYear_textview_termOne"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_MFOM1" />
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/manSci_firstYear_button_MFOM1"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_cat" />
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_be1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/manSci_firstYear_button_cat"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_be1" />
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_asm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/manSci_firstYear_button_be1"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_asm" />
+
+            <TextView
+                android:id="@+id/firstYear_textview_termTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manSci_firstYear_button_asm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:text="@string/modules_termTwo"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <!-- Sets the bottom margin -->
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_bs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstYear_textview_termTwo"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_bs" />
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_da1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manSci_firstYear_button_bs"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_da1" />
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_be2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manSci_firstYear_button_da1"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_be2" />
+
+            <Button
+                android:id="@+id/manSci_firstYear_button_MFOM2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manSci_firstYear_button_be2"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseModule"
+                android:text="@string/manSci_firstYear_MFOM2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
