@@ -13,7 +13,6 @@ import android.widget.TextView;
 import mansci.gradesapp.calculations.Calculations;
 
 public class MainActivity extends Activity {
-    String[] modules = new String[16];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +42,10 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Method that contains switch statement to determine what button has been pressed
+     * @param view the button that has been pressed
+     */
     public void chooseYear(View view) {
         Button button = (Button) view;
 
@@ -55,63 +58,12 @@ public class MainActivity extends Activity {
                 Intent intent2 = new Intent(this, ManSciFirstYear.class);
                 startActivity(intent2);
                 break;
-
-
         }
     }
 
-    public void viewModules(View view){
+    public void viewModules(View view) {
         Intent intent = new Intent(this, viewModules.class);
         startActivity(intent);
-    }
-
-    public void bestModule(View view) {
-        TextView textView = (TextView) view;
-
-        modules[0] = getResources().getString(R.string.manSci_firstYear_MFOM1);
-        modules[1] = getResources().getString(R.string.manSci_firstYear_MFOM2);
-        modules[2] = getResources().getString(R.string.manSci_firstYear_cat);
-        modules[3] = getResources().getString(R.string.manSci_firstYear_be1);
-        modules[4] = getResources().getString(R.string.manSci_firstYear_asm);
-        modules[5] = getResources().getString(R.string.manSci_firstYear_bs);
-        modules[6] = getResources().getString(R.string.manSci_firstYear_da1);
-        modules[7] = getResources().getString(R.string.manSci_firstYear_be2);
-
-        modules[8] = getResources().getString(R.string.manSci_secondYear_MFOM3);
-        modules[9] = getResources().getString(R.string.manSci_secondYear_strategy);
-        modules[10] = getResources().getString(R.string.manSci_secondYear_CT);
-        modules[11] = getResources().getString(R.string.manSci_secondYear_finance);
-        modules[12] = getResources().getString(R.string.manSci_secondYear_design);
-        modules[13] = getResources().getString(R.string.manSci_secondYear_PTOM);
-        modules[14] = getResources().getString(R.string.title_activity_da2);
-        modules[15] = getResources().getString(R.string.manSci_secondYear_minor);
-
-        // SORT ALPHA LOL xD
-        String text = "";
-        for (int i = 0; i < modules.length - 1; i++) {
-            text += "\n" + modules[i];
-        }
-        textView.setText(text);
-        sortModules(modules);
-        String text2 = "";
-        for (int i = 0; i < modules.length - 1; i++) {
-            text2 += "\n" + modules[i];
-            System.out.print(modules[i]);
-        }
-        textView.setText(text2);
-    }
-
-    public void sortModules(String[] modules) {
-        String t;
-        for (int i = 0; i < modules.length; i++) {
-            for (int j = 0; j < modules.length - 1 - i; j++) {
-                if (modules[j].compareTo(modules[j + 1]) > 0) {
-                    t = modules[j];
-                    modules[j] = modules[j + 1];
-                    modules[j + 1] = t;
-                }
-            }
-        }
     }
 }
 

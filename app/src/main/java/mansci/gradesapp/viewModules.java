@@ -1,14 +1,10 @@
 package mansci.gradesapp;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class viewModules extends AppCompatActivity {
     String[] modules = new String[16];
@@ -21,10 +17,15 @@ public class viewModules extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        bestModule(findViewById(R.id.modules_textview));
+        displayModules(findViewById(R.id.modules_textview));
     }
 
-    public void bestModule(View view) {
+    /**
+     * The initial view of all the BSci Management Science modules. Not sorted
+     *
+     * @param view the TextView that displays the module strings
+     */
+    public void displayModules(View view) {
         TextView textView = (TextView) view;
 
         modules[0] = getResources().getString(R.string.manSci_firstYear_MFOM1);
@@ -53,6 +54,11 @@ public class viewModules extends AppCompatActivity {
 
     }
 
+    /**
+     * Sorts the modules in displayModules() alphabetically and displays them on the same TextView
+     *
+     * @param view the TextView that displays the sorted modules
+     */
     public void alphaSort(View view) {
         String t;
         TextView textView = (TextView) findViewById(R.id.modules_textview);

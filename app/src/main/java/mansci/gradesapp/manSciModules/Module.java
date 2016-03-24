@@ -1,14 +1,13 @@
 package mansci.gradesapp.manSciModules;
 
-import mansci.gradesapp.R;
-
 /**
- * Created by Elias on 13/03/2016.
+ * Interface to help generalise the calculations of module grades into one single class.
+ * Tells all classes that implement this interface that they must contain the following methods.
  */
 public interface Module {
-    public int getAssignmentId(int index);
+    int getAssignmentId(int index);
 
-    public int getWeightId(int index);
+    int getWeightId(int index);
 
-    public int getGradeId(int index);
+    int getGradeId(int index);
 }

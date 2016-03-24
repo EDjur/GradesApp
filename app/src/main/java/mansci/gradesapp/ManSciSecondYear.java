@@ -30,10 +30,15 @@ public class ManSciSecondYear extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void chooseModule(View view){
+    /**
+     * Determines what button has been pressed
+     *
+     * @param view the button that has been pressed
+     */
+    public void chooseModule(View view) {
         Button button = (Button) view;
 
-        switch (button.getId()){
+        switch (button.getId()) {
             case R.id.manSci_secondYear_button_MFOM:
                 Intent MFOMIntent = new Intent(this, MFOM3.class);
                 startActivity(MFOMIntent);

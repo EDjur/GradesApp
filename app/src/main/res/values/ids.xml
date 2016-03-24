@@ -3,232 +3,230 @@
 
     <!-- YEAR 2 -->
     <!-- MFOM 3 -->
-    <item name="mfom3_assignment_1" type="id"/>
-    <item name="mfom3_assignment_2" type="id"/>
-    <item name="mfom3_assignment_3" type="id"/>
-    <item name="mfom3_assignment_4" type="id"/>
-    <item name="mfom3_assignment_1_weight" type="id"/>
-    <item name="mfom3_assignment_2_weight" type="id"/>
-    <item name="mfom3_assignment_3_weight" type="id"/>
-    <item name="mfom3_assignment_4_weight" type="id"/>
-    <item name="mfom3_assignment_1_grade" type="id"/>
-    <item name="mfom3_assignment_2_grade" type="id"/>
-    <item name="mfom3_assignment_3_grade" type="id"/>
-    <item name="mfom3_assignment_4_grade" type="id"/>
+    <item name="mfom3_assignment_1" type="id" />
+    <item name="mfom3_assignment_2" type="id" />
+    <item name="mfom3_assignment_3" type="id" />
+    <item name="mfom3_assignment_4" type="id" />
+    <item name="mfom3_assignment_1_weight" type="id" />
+    <item name="mfom3_assignment_2_weight" type="id" />
+    <item name="mfom3_assignment_3_weight" type="id" />
+    <item name="mfom3_assignment_4_weight" type="id" />
+    <item name="mfom3_assignment_1_grade" type="id" />
+    <item name="mfom3_assignment_2_grade" type="id" />
+    <item name="mfom3_assignment_3_grade" type="id" />
+    <item name="mfom3_assignment_4_grade" type="id" />
 
     <!-- STRATEGY -->
-    <item name="strategy_assignment_1" type="id"/>
-    <item name="strategy_assignment_2" type="id"/>
-    <item name="strategy_assignment_3" type="id"/>
-    <item name="strategy_assignment_4" type="id"/>
-    <item name="strategy_assignment_1_weight" type="id"/>
-    <item name="strategy_assignment_2_weight" type="id"/>
-    <item name="strategy_assignment_3_weight" type="id"/>
-    <item name="strategy_assignment_4_weight" type="id"/>
-    <item name="strategy_assignment_1_grade" type="id"/>
-    <item name="strategy_assignment_2_grade" type="id"/>
-    <item name="strategy_assignment_3_grade" type="id"/>
-    <item name="strategy_assignment_4_grade" type="id"/>
+    <item name="strategy_assignment_1" type="id" />
+    <item name="strategy_assignment_2" type="id" />
+    <item name="strategy_assignment_3" type="id" />
+    <item name="strategy_assignment_4" type="id" />
+    <item name="strategy_assignment_1_weight" type="id" />
+    <item name="strategy_assignment_2_weight" type="id" />
+    <item name="strategy_assignment_3_weight" type="id" />
+    <item name="strategy_assignment_4_weight" type="id" />
+    <item name="strategy_assignment_1_grade" type="id" />
+    <item name="strategy_assignment_2_grade" type="id" />
+    <item name="strategy_assignment_3_grade" type="id" />
+    <item name="strategy_assignment_4_grade" type="id" />
 
     <!-- PTOM -->
-    <item name="ptom_assignment_1" type="id"/>
-    <item name="ptom_assignment_2" type="id"/>
-    <item name="ptom_assignment_3" type="id"/>
-    <item name="ptom_assignment_4" type="id"/>
-    <item name="ptom_assignment_1_weight" type="id"/>
-    <item name="ptom_assignment_2_weight" type="id"/>
-    <item name="ptom_assignment_3_weight" type="id"/>
-    <item name="ptom_assignment_4_weight" type="id"/>
-    <item name="ptom_assignment_1_grade" type="id"/>
-    <item name="ptom_assignment_2_grade" type="id"/>
-    <item name="ptom_assignment_3_grade" type="id"/>
-    <item name="ptom_assignment_4_grade" type="id"/>
+    <item name="ptom_assignment_1" type="id" />
+    <item name="ptom_assignment_2" type="id" />
+    <item name="ptom_assignment_3" type="id" />
+    <item name="ptom_assignment_4" type="id" />
+    <item name="ptom_assignment_1_weight" type="id" />
+    <item name="ptom_assignment_2_weight" type="id" />
+    <item name="ptom_assignment_3_weight" type="id" />
+    <item name="ptom_assignment_4_weight" type="id" />
+    <item name="ptom_assignment_1_grade" type="id" />
+    <item name="ptom_assignment_2_grade" type="id" />
+    <item name="ptom_assignment_3_grade" type="id" />
+    <item name="ptom_assignment_4_grade" type="id" />
 
     <!-- MINOR -->
-    <item name="minor_assignment_1" type="id"/>
-    <item name="minor_assignment_2" type="id"/>
-    <item name="minor_assignment_3" type="id"/>
-    <item name="minor_assignment_4" type="id"/>
-    <item name="minor_assignment_1_weight" type="id"/>
-    <item name="minor_assignment_2_weight" type="id"/>
-    <item name="minor_assignment_3_weight" type="id"/>
-    <item name="minor_assignment_4_weight" type="id"/>
-    <item name="minor_assignment_1_grade" type="id"/>
-    <item name="minor_assignment_2_grade" type="id"/>
-    <item name="minor_assignment_3_grade" type="id"/>
-    <item name="minor_assignment_4_grade" type="id"/>
+    <item name="minor_assignment_1" type="id" />
+    <item name="minor_assignment_2" type="id" />
+    <item name="minor_assignment_3" type="id" />
+    <item name="minor_assignment_4" type="id" />
+    <item name="minor_assignment_1_weight" type="id" />
+    <item name="minor_assignment_2_weight" type="id" />
+    <item name="minor_assignment_3_weight" type="id" />
+    <item name="minor_assignment_4_weight" type="id" />
+    <item name="minor_assignment_1_grade" type="id" />
+    <item name="minor_assignment_2_grade" type="id" />
+    <item name="minor_assignment_3_grade" type="id" />
+    <item name="minor_assignment_4_grade" type="id" />
 
     <!-- FINANCE -->
-    <item name="finance_assignment_1" type="id"/>
-    <item name="finance_assignment_2" type="id"/>
-    <item name="finance_assignment_3" type="id"/>
-    <item name="finance_assignment_4" type="id"/>
-    <item name="finance_assignment_1_weight" type="id"/>
-    <item name="finance_assignment_2_weight" type="id"/>
-    <item name="finance_assignment_3_weight" type="id"/>
-    <item name="finance_assignment_4_weight" type="id"/>
-    <item name="finance_assignment_1_grade" type="id"/>
-    <item name="finance_assignment_2_grade" type="id"/>
-    <item name="finance_assignment_3_grade" type="id"/>
-    <item name="finance_assignment_4_grade" type="id"/>
+    <item name="finance_assignment_1" type="id" />
+    <item name="finance_assignment_2" type="id" />
+    <item name="finance_assignment_3" type="id" />
+    <item name="finance_assignment_4" type="id" />
+    <item name="finance_assignment_1_weight" type="id" />
+    <item name="finance_assignment_2_weight" type="id" />
+    <item name="finance_assignment_3_weight" type="id" />
+    <item name="finance_assignment_4_weight" type="id" />
+    <item name="finance_assignment_1_grade" type="id" />
+    <item name="finance_assignment_2_grade" type="id" />
+    <item name="finance_assignment_3_grade" type="id" />
+    <item name="finance_assignment_4_grade" type="id" />
 
     <!-- DESIGN -->
-    <item name="design_assignment_1" type="id"/>
-    <item name="design_assignment_2" type="id"/>
-    <item name="design_assignment_3" type="id"/>
-    <item name="design_assignment_4" type="id"/>
-    <item name="design_assignment_1_weight" type="id"/>
-    <item name="design_assignment_2_weight" type="id"/>
-    <item name="design_assignment_3_weight" type="id"/>
-    <item name="design_assignment_4_weight" type="id"/>
-    <item name="design_assignment_1_grade" type="id"/>
-    <item name="design_assignment_2_grade" type="id"/>
-    <item name="design_assignment_3_grade" type="id"/>
-    <item name="design_assignment_4_grade" type="id"/>
+    <item name="design_assignment_1" type="id" />
+    <item name="design_assignment_2" type="id" />
+    <item name="design_assignment_3" type="id" />
+    <item name="design_assignment_4" type="id" />
+    <item name="design_assignment_1_weight" type="id" />
+    <item name="design_assignment_2_weight" type="id" />
+    <item name="design_assignment_3_weight" type="id" />
+    <item name="design_assignment_4_weight" type="id" />
+    <item name="design_assignment_1_grade" type="id" />
+    <item name="design_assignment_2_grade" type="id" />
+    <item name="design_assignment_3_grade" type="id" />
+    <item name="design_assignment_4_grade" type="id" />
 
     <!-- DATA ANALYTICS II -->
-    <item name="da2_assignment_1" type="id"/>
-    <item name="da2_assignment_2" type="id"/>
-    <item name="da2_assignment_3" type="id"/>
-    <item name="da2_assignment_4" type="id"/>
-    <item name="da2_assignment_1_weight" type="id"/>
-    <item name="da2_assignment_2_weight" type="id"/>
-    <item name="da2_assignment_3_weight" type="id"/>
-    <item name="da2_assignment_4_weight" type="id"/>
-    <item name="da2_assignment_1_grade" type="id"/>
-    <item name="da2_assignment_2_grade" type="id"/>
-    <item name="da2_assignment_3_grade" type="id"/>
-    <item name="da2_assignment_4_grade" type="id"/>
+    <item name="da2_assignment_1" type="id" />
+    <item name="da2_assignment_2" type="id" />
+    <item name="da2_assignment_3" type="id" />
+    <item name="da2_assignment_4" type="id" />
+    <item name="da2_assignment_1_weight" type="id" />
+    <item name="da2_assignment_2_weight" type="id" />
+    <item name="da2_assignment_3_weight" type="id" />
+    <item name="da2_assignment_4_weight" type="id" />
+    <item name="da2_assignment_1_grade" type="id" />
+    <item name="da2_assignment_2_grade" type="id" />
+    <item name="da2_assignment_3_grade" type="id" />
+    <item name="da2_assignment_4_grade" type="id" />
 
     <!-- COMPUTATIONAL THINKING -->
-    <item name="ct_assignment_1" type="id"/>
-    <item name="ct_assignment_2" type="id"/>
-    <item name="ct_assignment_3" type="id"/>
-    <item name="ct_assignment_4" type="id"/>
-    <item name="ct_assignment_1_weight" type="id"/>
-    <item name="ct_assignment_2_weight" type="id"/>
-    <item name="ct_assignment_3_weight" type="id"/>
-    <item name="ct_assignment_4_weight" type="id"/>
-    <item name="ct_assignment_1_grade" type="id"/>
-    <item name="ct_assignment_2_grade" type="id"/>
-    <item name="ct_assignment_3_grade" type="id"/>
-    <item name="ct_assignment_4_grade" type="id"/>
-    
-    
+    <item name="ct_assignment_1" type="id" />
+    <item name="ct_assignment_2" type="id" />
+    <item name="ct_assignment_3" type="id" />
+    <item name="ct_assignment_4" type="id" />
+    <item name="ct_assignment_1_weight" type="id" />
+    <item name="ct_assignment_2_weight" type="id" />
+    <item name="ct_assignment_3_weight" type="id" />
+    <item name="ct_assignment_4_weight" type="id" />
+    <item name="ct_assignment_1_grade" type="id" />
+    <item name="ct_assignment_2_grade" type="id" />
+    <item name="ct_assignment_3_grade" type="id" />
+    <item name="ct_assignment_4_grade" type="id" />
+
+
     <!-- YEAR ONE -->
     <!-- MFOM 1 -->
-    <item name="mfom1_assignment_1" type="id"/>
-    <item name="mfom1_assignment_2" type="id"/>
-    <item name="mfom1_assignment_3" type="id"/>
-    <item name="mfom1_assignment_4" type="id"/>
-    <item name="mfom1_assignment_1_weight" type="id"/>
-    <item name="mfom1_assignment_2_weight" type="id"/>
-    <item name="mfom1_assignment_3_weight" type="id"/>
-    <item name="mfom1_assignment_4_weight" type="id"/>
-    <item name="mfom1_assignment_1_grade" type="id"/>
-    <item name="mfom1_assignment_2_grade" type="id"/>
-    <item name="mfom1_assignment_3_grade" type="id"/>
-    <item name="mfom1_assignment_4_grade" type="id"/>
+    <item name="mfom1_assignment_1" type="id" />
+    <item name="mfom1_assignment_2" type="id" />
+    <item name="mfom1_assignment_3" type="id" />
+    <item name="mfom1_assignment_4" type="id" />
+    <item name="mfom1_assignment_1_weight" type="id" />
+    <item name="mfom1_assignment_2_weight" type="id" />
+    <item name="mfom1_assignment_3_weight" type="id" />
+    <item name="mfom1_assignment_4_weight" type="id" />
+    <item name="mfom1_assignment_1_grade" type="id" />
+    <item name="mfom1_assignment_2_grade" type="id" />
+    <item name="mfom1_assignment_3_grade" type="id" />
+    <item name="mfom1_assignment_4_grade" type="id" />
 
     <!-- CAT -->
-    <item name="cat_assignment_1" type="id"/>
-    <item name="cat_assignment_2" type="id"/>
-    <item name="cat_assignment_3" type="id"/>
-    <item name="cat_assignment_4" type="id"/>
-    <item name="cat_assignment_1_weight" type="id"/>
-    <item name="cat_assignment_2_weight" type="id"/>
-    <item name="cat_assignment_3_weight" type="id"/>
-    <item name="cat_assignment_4_weight" type="id"/>
-    <item name="cat_assignment_1_grade" type="id"/>
-    <item name="cat_assignment_2_grade" type="id"/>
-    <item name="cat_assignment_3_grade" type="id"/>
-    <item name="cat_assignment_4_grade" type="id"/>
+    <item name="cat_assignment_1" type="id" />
+    <item name="cat_assignment_2" type="id" />
+    <item name="cat_assignment_3" type="id" />
+    <item name="cat_assignment_4" type="id" />
+    <item name="cat_assignment_1_weight" type="id" />
+    <item name="cat_assignment_2_weight" type="id" />
+    <item name="cat_assignment_3_weight" type="id" />
+    <item name="cat_assignment_4_weight" type="id" />
+    <item name="cat_assignment_1_grade" type="id" />
+    <item name="cat_assignment_2_grade" type="id" />
+    <item name="cat_assignment_3_grade" type="id" />
+    <item name="cat_assignment_4_grade" type="id" />
 
     <!-- Business Economics 1 -->
-    <item name="be1_assignment_1" type="id"/>
-    <item name="be1_assignment_2" type="id"/>
-    <item name="be1_assignment_3" type="id"/>
-    <item name="be1_assignment_4" type="id"/>
-    <item name="be1_assignment_1_weight" type="id"/>
-    <item name="be1_assignment_2_weight" type="id"/>
-    <item name="be1_assignment_3_weight" type="id"/>
-    <item name="be1_assignment_4_weight" type="id"/>
-    <item name="be1_assignment_1_grade" type="id"/>
-    <item name="be1_assignment_2_grade" type="id"/>
-    <item name="be1_assignment_3_grade" type="id"/>
-    <item name="be1_assignment_4_grade" type="id"/>
+    <item name="be1_assignment_1" type="id" />
+    <item name="be1_assignment_2" type="id" />
+    <item name="be1_assignment_3" type="id" />
+    <item name="be1_assignment_4" type="id" />
+    <item name="be1_assignment_1_weight" type="id" />
+    <item name="be1_assignment_2_weight" type="id" />
+    <item name="be1_assignment_3_weight" type="id" />
+    <item name="be1_assignment_4_weight" type="id" />
+    <item name="be1_assignment_1_grade" type="id" />
+    <item name="be1_assignment_2_grade" type="id" />
+    <item name="be1_assignment_3_grade" type="id" />
+    <item name="be1_assignment_4_grade" type="id" />
 
     <!-- Art and Science of Management -->
-    <item name="asm_assignment_1" type="id"/>
-    <item name="asm_assignment_2" type="id"/>
-    <item name="asm_assignment_3" type="id"/>
-    <item name="asm_assignment_4" type="id"/>
-    <item name="asm_assignment_1_weight" type="id"/>
-    <item name="asm_assignment_2_weight" type="id"/>
-    <item name="asm_assignment_3_weight" type="id"/>
-    <item name="asm_assignment_4_weight" type="id"/>
-    <item name="asm_assignment_1_grade" type="id"/>
-    <item name="asm_assignment_2_grade" type="id"/>
-    <item name="asm_assignment_3_grade" type="id"/>
-    <item name="asm_assignment_4_grade" type="id"/>
+    <item name="asm_assignment_1" type="id" />
+    <item name="asm_assignment_2" type="id" />
+    <item name="asm_assignment_3" type="id" />
+    <item name="asm_assignment_4" type="id" />
+    <item name="asm_assignment_1_weight" type="id" />
+    <item name="asm_assignment_2_weight" type="id" />
+    <item name="asm_assignment_3_weight" type="id" />
+    <item name="asm_assignment_4_weight" type="id" />
+    <item name="asm_assignment_1_grade" type="id" />
+    <item name="asm_assignment_2_grade" type="id" />
+    <item name="asm_assignment_3_grade" type="id" />
+    <item name="asm_assignment_4_grade" type="id" />
 
     <!-- DATA ANALYTICS I-->
-    <item name="da1_assignment_1" type="id"/>
-    <item name="da1_assignment_2" type="id"/>
-    <item name="da1_assignment_3" type="id"/>
-    <item name="da1_assignment_4" type="id"/>
-    <item name="da1_assignment_1_weight" type="id"/>
-    <item name="da1_assignment_2_weight" type="id"/>
-    <item name="da1_assignment_3_weight" type="id"/>
-    <item name="da1_assignment_4_weight" type="id"/>
-    <item name="da1_assignment_1_grade" type="id"/>
-    <item name="da1_assignment_2_grade" type="id"/>
-    <item name="da1_assignment_3_grade" type="id"/>
-    <item name="da1_assignment_4_grade" type="id"/>
+    <item name="da1_assignment_1" type="id" />
+    <item name="da1_assignment_2" type="id" />
+    <item name="da1_assignment_3" type="id" />
+    <item name="da1_assignment_4" type="id" />
+    <item name="da1_assignment_1_weight" type="id" />
+    <item name="da1_assignment_2_weight" type="id" />
+    <item name="da1_assignment_3_weight" type="id" />
+    <item name="da1_assignment_4_weight" type="id" />
+    <item name="da1_assignment_1_grade" type="id" />
+    <item name="da1_assignment_2_grade" type="id" />
+    <item name="da1_assignment_3_grade" type="id" />
+    <item name="da1_assignment_4_grade" type="id" />
 
     <!-- BEHAVIOURAL SCIENCE -->
-    <item name="bs_assignment_1" type="id"/>
-    <item name="bs_assignment_2" type="id"/>
-    <item name="bs_assignment_3" type="id"/>
-    <item name="bs_assignment_4" type="id"/>
-    <item name="bs_assignment_1_weight" type="id"/>
-    <item name="bs_assignment_2_weight" type="id"/>
-    <item name="bs_assignment_3_weight" type="id"/>
-    <item name="bs_assignment_4_weight" type="id"/>
-    <item name="bs_assignment_1_grade" type="id"/>
-    <item name="bs_assignment_2_grade" type="id"/>
-    <item name="bs_assignment_3_grade" type="id"/>
-    <item name="bs_assignment_4_grade" type="id"/>
+    <item name="bs_assignment_1" type="id" />
+    <item name="bs_assignment_2" type="id" />
+    <item name="bs_assignment_3" type="id" />
+    <item name="bs_assignment_4" type="id" />
+    <item name="bs_assignment_1_weight" type="id" />
+    <item name="bs_assignment_2_weight" type="id" />
+    <item name="bs_assignment_3_weight" type="id" />
+    <item name="bs_assignment_4_weight" type="id" />
+    <item name="bs_assignment_1_grade" type="id" />
+    <item name="bs_assignment_2_grade" type="id" />
+    <item name="bs_assignment_3_grade" type="id" />
+    <item name="bs_assignment_4_grade" type="id" />
 
     <!-- MFOM2 -->
-    <item name="mfom2_assignment_1" type="id"/>
-    <item name="mfom2_assignment_2" type="id"/>
-    <item name="mfom2_assignment_3" type="id"/>
-    <item name="mfom2_assignment_4" type="id"/>
-    <item name="mfom2_assignment_1_weight" type="id"/>
-    <item name="mfom2_assignment_2_weight" type="id"/>
-    <item name="mfom2_assignment_3_weight" type="id"/>
-    <item name="mfom2_assignment_4_weight" type="id"/>
-    <item name="mfom2_assignment_1_grade" type="id"/>
-    <item name="mfom2_assignment_2_grade" type="id"/>
-    <item name="mfom2_assignment_3_grade" type="id"/>
-    <item name="mfom2_assignment_4_grade" type="id"/>
+    <item name="mfom2_assignment_1" type="id" />
+    <item name="mfom2_assignment_2" type="id" />
+    <item name="mfom2_assignment_3" type="id" />
+    <item name="mfom2_assignment_4" type="id" />
+    <item name="mfom2_assignment_1_weight" type="id" />
+    <item name="mfom2_assignment_2_weight" type="id" />
+    <item name="mfom2_assignment_3_weight" type="id" />
+    <item name="mfom2_assignment_4_weight" type="id" />
+    <item name="mfom2_assignment_1_grade" type="id" />
+    <item name="mfom2_assignment_2_grade" type="id" />
+    <item name="mfom2_assignment_3_grade" type="id" />
+    <item name="mfom2_assignment_4_grade" type="id" />
 
     <!-- BUSINESS ECONOMICS II -->
-    <item name="be2_assignment_1" type="id"/>
-    <item name="be2_assignment_2" type="id"/>
-    <item name="be2_assignment_3" type="id"/>
-    <item name="be2_assignment_4" type="id"/>
-    <item name="be2_assignment_1_weight" type="id"/>
-    <item name="be2_assignment_2_weight" type="id"/>
-    <item name="be2_assignment_3_weight" type="id"/>
-    <item name="be2_assignment_4_weight" type="id"/>
-    <item name="be2_assignment_1_grade" type="id"/>
-    <item name="be2_assignment_2_grade" type="id"/>
-    <item name="be2_assignment_3_grade" type="id"/>
-    <item name="be2_assignment_4_grade" type="id"/>
-
-
+    <item name="be2_assignment_1" type="id" />
+    <item name="be2_assignment_2" type="id" />
+    <item name="be2_assignment_3" type="id" />
+    <item name="be2_assignment_4" type="id" />
+    <item name="be2_assignment_1_weight" type="id" />
+    <item name="be2_assignment_2_weight" type="id" />
+    <item name="be2_assignment_3_weight" type="id" />
+    <item name="be2_assignment_4_weight" type="id" />
+    <item name="be2_assignment_1_grade" type="id" />
+    <item name="be2_assignment_2_grade" type="id" />
+    <item name="be2_assignment_3_grade" type="id" />
+    <item name="be2_assignment_4_grade" type="id" />
 
 
 </resources>

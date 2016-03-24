@@ -1,7 +1,6 @@
 package mansci.gradesapp.calculations;
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.TypedValue;
@@ -11,25 +10,21 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 import mansci.gradesapp.R;
-import mansci.gradesapp.manSciModules.MFOM3;
 import mansci.gradesapp.manSciModules.Module;
 
-/**
- * Created by Elias on 12/03/2016.
- */
 public class Calculations {
     /**
      * Main calculation class used by all modules
+     * This object can add assignments and calculate the grades needed for the final exam in each module
      */
-    private static List<Assignment> assignmentList;
+    // private static List<Assignment> assignmentList; // Used for storing
     private int number_of_assignments = 0;
     private Activity context;
-    private List<Integer> gradesNeeded;
+
     // Set up TextView's
     TextView assignment1;
     EditText assignment1Weight;
@@ -50,13 +45,11 @@ public class Calculations {
     public Calculations(AppCompatActivity context) {
         this.context = context;
     }
-    public Calculations(Activity context){
+
+    public Calculations(Activity context) {
         this.context = context;
     }
 
-    public List<Assignment> getAssignmentList(){
-        return assignmentList;
-    }
     public class Assignment {
         /**
          * Helper class to keep track of weights and their corresponding grades
@@ -64,17 +57,11 @@ public class Calculations {
         int weight;
         int grade;
         String name;
-        List<Integer> gradesNeeded;
 
         public Assignment(int weight, int grade) {
             this.weight = weight;
             this.grade = grade;
             this.name = "";
-        }
-        public Assignment(int weight, int grade, String module, List<Integer> gradesNeeded){
-            this.name = module;
-            this.gradesNeeded = new ArrayList<>();
-            this.gradesNeeded = gradesNeeded;
         }
 
         public int getWeight() {
@@ -84,24 +71,20 @@ public class Calculations {
         public int getGrade() {
             return grade;
         }
-        public String getName(){
-            return name;
-        }
 
-        public List<Integer> getGradesNeeded(){
-            return gradesNeeded;
+        public String getName() {
+            return name;
         }
     }
 
 
+    /**
+     * Calculates the grades needed to achieve a certain grade in the final exam of a module
+     *
+     * @param gradesList the list of assignment grades currently achieved
+     * @param module     the module in question
+     */
     public void calculateGrades(TextView[] gradesList, String module) {
-        /**
-         * Calculates the grades needed at the final exam given 1-4 assignments and their corresponding weights and grades
-         *
-         * @param weights A int array of the weights given
-         * @param grades A int array of the grades given
-         * @param number_of_assignments A int of how many assignments have been filled out
-         */
 
         int[] grades = new int[number_of_assignments];
         int[] weights = new int[number_of_assignments];
@@ -165,38 +148,11 @@ public class Calculations {
         TextView twoTwo = gradesList[2];
         TextView pass = gradesList[3];
 
-        // For summary screen
-        assignmentList = new ArrayList<>();
-        for(int i = 0; i < number_of_assignments; i++){
-            assignmentList.add(new Assignment(weights[0], grades[0], module, gradesNeeded));
-        }
-
+        // Avoids grades higher than 100 and sets them to "Unobtainable" instead
         first.setText((gradesNeeded.get(3) > 100 ? "Unobtainable" : gradesNeeded.get(3).toString()));
         twoOne.setText((gradesNeeded.get(2) > 100 ? "Unobtainable" : gradesNeeded.get(2).toString()));
         twoTwo.setText((gradesNeeded.get(1) > 100 ? "Unobtainable" : gradesNeeded.get(1).toString()));
         pass.setText((gradesNeeded.get(0) > 100 ? "Unobtainable" : gradesNeeded.get(0).toString()));
-    }
-    public String summary(){
-        // Find module with lowest required grade for first if it's not 0
-
-        int index = 0;
-        //String module;
-
-        for(int i = 0; i < assignmentList.size();i++){
-            if(i != assignmentList.size()){
-                if (assignmentList.get(i).getGradesNeeded().get(0) < assignmentList.get(i+1).getGradesNeeded().get(0)){
-                    index = i+1;
-                }
-            }else{
-                if(assignmentList.get(i).getGradesNeeded().get(0) < assignmentList.get(0).getGradesNeeded().get(0)){
-                    index = 0;
-                }
-            }
-            // Find IndexOf of index and find the module:
-
-
-        }
-        return assignmentList.get(index).getName();
     }
 
     public List<Integer> calculateGrades(int[] weights, int[] grades) {
@@ -218,6 +174,7 @@ public class Calculations {
         }
         // Conversion needed because of weights being input as percentages
         haveSoFar *= 0.01;
+        // If the assignments have a weight >= 100 then there is no final exam. Therefore set to 0.
         int finalExamWeight = (weightSum <= 100 ? 100 - weightSum : 0);
 
         // Avoid negative values
@@ -234,8 +191,6 @@ public class Calculations {
             needForFirst = (needFor70 / finalExamWeight) * 100;
         }
 
-        // CONSIDER ELSE SEND DIVISION BY ZERO MESSAGE
-
         // Create the list to return and add the integer values needed rounded up to the nearest integer
         List<Integer> gradesNeeded = new ArrayList<>();
         gradesNeeded.add((int) Math.ceil(needForThird));
@@ -246,13 +201,12 @@ public class Calculations {
         return gradesNeeded;
     }
 
+    /**
+     * Adds an assignment to the current activity screen. An assignment has a Title, Weight, and Grade.
+     *
+     * @param parentLayout The layout on which to add the assignment
+     */
     public void addAssignment(RelativeLayout parentLayout) {
-        /**
-         * Adds a new Assignment to the activity
-         * number_of_assignments keeps track of how many assignments have been added
-         */
-
-        // Test for null
 
         // Sets up the parentLayout used
         // Sets up different LayoutParams for the three different columns (Assignment, Weight, Grade)
@@ -451,10 +405,12 @@ public class Calculations {
         number_of_assignments++;
     }
 
+    /**
+     * Method to hide the keyboard when tapping outside the box / keyboard
+     *
+     * @param view the View object in question
+     */
     public void hideKeyboard(View view) {
-        /**
-         * Method to manage hiding of keyboard when tapping the main view
-         */
         InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }

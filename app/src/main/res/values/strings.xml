@@ -9,6 +9,7 @@
     <string name="modules_termTwo">Term 2</string>
     <string name="add_assignment">Add assignment</string>
     <string name="calculate_grades_needed">Calculate grades needed</string>
+    <string name="main_button_viewModules">View modules</string>
 
     <!-- MODULES MANAGEMENT SCIENCE YEAR 1-->
     <!-- TERM 1 -->

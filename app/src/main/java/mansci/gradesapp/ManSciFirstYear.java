@@ -28,6 +28,11 @@ public class ManSciFirstYear extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    /**
+     * Determines what button has been pressed
+     *
+     * @param view the button that has been pressed
+     */
     public void chooseModule(View view) {
         Button button = (Button) view;
 
